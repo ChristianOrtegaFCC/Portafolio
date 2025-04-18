@@ -1,7 +1,0 @@
-Para que el script principal (fire_detection) funcione correctamente, hay que ejecutar antes el script "data_augmentation" que generará x cantidad de copias de cada clase (x es configurable para cada clase en el script). al terminar su ejecución generará las carpetas "imgs_aug_copy" donde estarán las imágenes adicionales, y "imgs_mix" donde aparecerá la suma de las originales mas las adicionales. Esta ultima será la carpeta usada por el script principal ("fire_detection.py") para entrenar la red neuronal convolucional.
-
-El script principal guardará a su vez, una carpeta con copias de las imágenes finalmente procesadas, tal cual las usa la red neuronal durante su entrenamiento.
-
-(en este repositorio, la única carpeta completa es la original "imgs" ya que es el data set crudo, sin ninguna clase de modificación)
-
-(Este proyecto está parcialmente basado en otro (detección de leucemia) que es a su vez una versión mejorada de sí misma) (la versión original de ese proyecto fue hecha en 2023, mucho más complicada y con resultados mucho menos satisfactorios). 
