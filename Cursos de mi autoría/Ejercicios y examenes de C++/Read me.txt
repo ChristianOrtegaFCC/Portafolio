@@ -1,0 +1,3 @@
+La carpeta de exámenes es bastante autodescriptiva y es exactamente lo que dice: Exámenes que diseñé para las personas que me pidieron asesorías en programación, exámenes que escribí después de dichas asesorías :) 
+
+La carpeta de ejercicios está menos documentada, algunos de los scripts ahí son clases, otros son ejercicios, otros son también pequeños exámenes... No siguen un orden muy estructurado, pero pueden ser usados tanto como guía como referencia como examen, notas, o lo que sea :)
