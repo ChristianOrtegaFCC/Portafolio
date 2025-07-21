@@ -1,0 +1,55 @@
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\bin\Debug\Agenda_binaria.exe.config
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\bin\Debug\Agenda_binaria.exe
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\bin\Debug\Agenda_binaria.pdb
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.exe
+C:\Users\diosd\Desktop\Programas de C#\Agenda_binaria\obj\Debug\Agenda_binaria.pdb
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\bin\Debug\Agenda_binaria.exe.config
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\bin\Debug\Agenda_binaria.exe
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\bin\Debug\Agenda_binaria.pdb
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.exe
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria\obj\Debug\Agenda_binaria.pdb
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\bin\Debug\Agenda_binaria.exe.config
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\bin\Debug\Agenda_binaria.exe
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\bin\Debug\Agenda_binaria.pdb
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.exe
+C:\Users\diosd\Desktop\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\bin\Debug\Agenda_binaria.exe.config
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\bin\Debug\Agenda_binaria.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\bin\Debug\Agenda_binaria.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.AssemblyReference.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.SuggestedBindingRedirects.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.Form1.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.Properties.Resources.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.GenerateResource.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.csproj.CoreCompileInputs.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep)\obj\Debug\Agenda_binaria.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\bin\Debug\Agenda_binaria.exe.config
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\bin\Debug\Agenda_binaria.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\bin\Debug\Agenda_binaria.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.csproj.AssemblyReference.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.csproj.SuggestedBindingRedirects.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.Form1.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.Properties.Resources.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.csproj.GenerateResource.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.csproj.CoreCompileInputs.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\04_Agenda_binaria(20,27 sep) #22\obj\Debug\Agenda_binaria.pdb

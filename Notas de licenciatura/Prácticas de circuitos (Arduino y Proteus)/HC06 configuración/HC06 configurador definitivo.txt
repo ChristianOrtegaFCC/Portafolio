@@ -1,0 +1,53 @@
+#include <SoftwareSerial.h>
+
+// Define los pines RX y TX para la comunicación con el módulo HC-06
+SoftwareSerial bluetoothSerial(10, 11); // RX, TX
+
+/*
+
+		Mi configuración física, que me funcionó:
+
+			HC-06		Arduino
+
+	Conectar:	Power	a	5V
+			GND	a	GND
+			TXD	a	PIN10	
+			RXD	a	PIN11		
+
+
+*/
+
+void setup() {
+  // Inicializa la comunicación serial con el módulo HC-06
+  
+  Serial.begin(9600);
+  bluetoothSerial.begin(9600);
+
+  // Envía comandos AT para configurar el módulo
+  delay(1000); // Espera para que el módulo se inicie correctamente
+  bluetoothSerial.println("AT"); // Comprueba si el módulo responde
+  delay(1000);
+
+  // Cambia el nombre del módulo a "Amauri"
+  bluetoothSerial.println("AT+NAMEAmaurix");
+  delay(1000);
+
+  // Configura la contraseña como "2524"
+  bluetoothSerial.println("AT+PIN5696");
+  delay(1000);
+
+  // Reinicia el módulo para aplicar los cambios
+  bluetoothSerial.println("AT+RESET");
+
+  delay(1000);
+  
+}
+
+void loop() {
+
+
+  while (bluetoothSerial.available()) {
+    char receivedChar = bluetoothSerial.read();
+    Serial.print(receivedChar+"\n");
+  }
+}

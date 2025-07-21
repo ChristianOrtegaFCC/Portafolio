@@ -1,0 +1,22 @@
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\bin\Debug\tiempos2.exe.config
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\bin\Debug\tiempos2.exe
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\bin\Debug\tiempos2.pdb
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.exe
+C:\Users\diosd\Desktop\Programas de C#\tiempos2\obj\Debug\tiempos2.pdb
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\bin\Debug\tiempos2.exe.config
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\bin\Debug\tiempos2.exe
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\bin\Debug\tiempos2.pdb
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.exe
+C:\Users\diosd\Desktop\Programas de C#\00_tiempos2 (16 ago)\obj\Debug\tiempos2.pdb

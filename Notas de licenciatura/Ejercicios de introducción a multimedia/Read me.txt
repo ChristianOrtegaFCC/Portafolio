@@ -1,0 +1,1 @@
+las prácticas con scripts requieren la inicialización y configuración de un servidor. El cómo hacerlo se encuentra en el reporte de la segunda práctica (si no se inicializa dicho servidor, los scripts no podrán ser ejecutados)

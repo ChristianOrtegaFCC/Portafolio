@@ -1,0 +1,12 @@
+C:\Users\diosd\Desktop\Programas de C#\codigo2\bin\Debug\codigo2.exe.config
+C:\Users\diosd\Desktop\Programas de C#\codigo2\bin\Debug\codigo2.exe
+C:\Users\diosd\Desktop\Programas de C#\codigo2\bin\Debug\codigo2.pdb
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.exe
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.pdb
+C:\Users\diosd\Desktop\Programas de C#\codigo2\obj\Debug\codigo2.procesos.resources

@@ -1,0 +1,36 @@
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\bin\Debug\03_bitacora.exe.config
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\bin\Debug\03_bitacora.exe
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\bin\Debug\03_bitacora.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\03_bitacora.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\03_bitacora.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\_03_bitacora.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\_03_bitacora.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\03_bitacora.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\03_bitacora.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\03_bitacora.exe
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora\obj\Debug\03_bitacora.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\bin\Debug\03_bitacora.exe.config
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\bin\Debug\03_bitacora.exe
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\bin\Debug\03_bitacora.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\03_bitacora.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\03_bitacora.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\_03_bitacora.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\_03_bitacora.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\03_bitacora.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\03_bitacora.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\03_bitacora.exe
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\03_bitacora.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8 sep)\obj\Debug\_03_bitacora.mostrar.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\bin\Debug\03_bitacora.exe.config
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\bin\Debug\03_bitacora.exe
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\bin\Debug\03_bitacora.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\03_bitacora.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\03_bitacora.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\_03_bitacora.buscar.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\_03_bitacora.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\_03_bitacora.mostrar.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\_03_bitacora.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\03_bitacora.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\03_bitacora.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\03_bitacora.exe
+C:\Users\diosd\Desktop\Programas de C#\03_bitacora(8,13 sep)\obj\Debug\03_bitacora.pdb

@@ -1,0 +1,108 @@
+unit AfterTheStorm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ExtDlgs;
+
+type
+  TForm1 = class(TForm)
+    Image1: TImage;
+    Panel1: TPanel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    OpenPictureDialog1: TOpenPictureDialog;
+    procedure Button1Click(Sender: TObject);
+    procedure Image1MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure FormCreate(Sender: TObject);
+    procedure Image1MouseLeave(Sender: TObject);
+    procedure Abrir(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+image1.canvas.Brush.color := clred;
+image1.canvas.Rectangle(0,0,400,400);
+image1.canvas.Brush.color := clwhite;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+image1.canvas.Brush.color := cllime;
+image1.canvas.Rectangle(0,0,400,400);
+image1.canvas.Brush.color := clwhite;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+image1.canvas.Brush.color := clblue;
+image1.canvas.Rectangle(0,0,400,400);
+image1.canvas.Brush.color := clwhite;
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+showmessage(':^)');
+end;
+
+procedure TForm1.Abrir(Sender: TObject);
+begin
+if openpicturedialog1.Execute then
+  image1.picture.LoadFromFile(openpicturedialog1.FileName) ;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+image1.canvas.Rectangle(0,0,400,400);
+end;
+
+procedure TForm1.Image1MouseLeave(Sender: TObject);
+begin
+     edit1.text := 'fuera';
+     edit2.text := 'fuera';
+end;
+
+procedure TForm1.Image1MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+     edit1.text := inttostr(x);
+     edit2.text := inttostr(y);
+     edit3.text := inttostr(image1.canvas.pixels[x,y] and $0000ff) ;
+     edit4.text := inttostr((image1.canvas.pixels[x,y] and $00ff00) shr 8);  // verde
+     //edit5.text := inttostr((image1.canvas.pixels[x,y] or $0000ff) shr 16); // azul
+     edit5.text := inttostr((image1.canvas.pixels[x,y] and $ff0000)); // azul
+
+
+end;
+
+
+end.

@@ -1,0 +1,52 @@
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\bin\Debug\03_Fuentes.exe.config
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\bin\Debug\03_Fuentes.exe
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\bin\Debug\03_Fuentes.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\03_Fuentes.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\03_Fuentes.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\_03_Fuentes.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\_03_Fuentes.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\03_Fuentes.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\03_Fuentes.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\03_Fuentes.exe
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\03_Fuentes.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\_03_Fuentes.Acerca.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes\obj\Debug\_03_Fuentes.Opciones.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\bin\Debug\03_Fuentes.exe.config
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\bin\Debug\03_Fuentes.exe
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\bin\Debug\03_Fuentes.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\03_Fuentes.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\03_Fuentes.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\_03_Fuentes.Acerca.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\_03_Fuentes.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\_03_Fuentes.Opciones.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\_03_Fuentes.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\03_Fuentes.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\03_Fuentes.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\03_Fuentes.exe
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23 ago)\obj\Debug\03_Fuentes.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\bin\Debug\03_Fuentes.exe.config
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\bin\Debug\03_Fuentes.exe
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\bin\Debug\03_Fuentes.pdb
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\03_Fuentes.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\03_Fuentes.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\_03_Fuentes.Acerca.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\_03_Fuentes.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\_03_Fuentes.Opciones.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\_03_Fuentes.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\03_Fuentes.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\03_Fuentes.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\03_Fuentes.exe
+C:\Users\diosd\Desktop\Programas de C#\03_Fuentes (23,30 ago)\obj\Debug\03_Fuentes.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\bin\Debug\03_Fuentes.exe.config
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\bin\Debug\03_Fuentes.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\bin\Debug\03_Fuentes.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\03_Fuentes.csproj.AssemblyReference.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\03_Fuentes.csproj.SuggestedBindingRedirects.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\_03_Fuentes.Acerca.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\_03_Fuentes.Form1.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\_03_Fuentes.Opciones.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\_03_Fuentes.Properties.Resources.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\03_Fuentes.csproj.GenerateResource.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\03_Fuentes.csproj.CoreCompileInputs.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\03_Fuentes.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\02_Fuentes (23,30 ago, 6 sep) #21\obj\Debug\03_Fuentes.pdb

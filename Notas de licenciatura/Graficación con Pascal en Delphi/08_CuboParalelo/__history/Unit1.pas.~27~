@@ -1,0 +1,155 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Image1: TImage;
+    Panel1: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    Button8: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure Button8Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+   // Definición de TPoint3D
+type
+TPoint3D = packed record
+x: Real;
+y: Real;
+z: Real;
+end;
+// Definición de constantes
+const
+TamFig = 1;
+// Definición de variables
+// globales
+var
+Cubo : Array[1..10] of TPoint3D;   //Definición del Cubo
+P, Q : TPoint;  //Variables para pintar en pantalla.
+xAux, yAux, zAux : Real;  //Variables auxiliares para la rotación.
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+Var
+i: integer;
+alfa : Real;
+begin
+// Aplica la Rotación Rx a todos los puntos del Cubo.
+// El ángulo esta determinado por alfa
+alfa := (5*Pi) / 180.0; // Grados a radianes
+for i := 1 to 5 do
+begin
+xAux := (Cubo[i].y * COS( -alfa )) + (Cubo[i].z * SIN( -alfa ));
+yAux := -(Cubo[i].y * SIN( -alfa )) + (Cubo[i].z * COS( -alfa ));
+Cubo[i].x := xAux;
+Cubo[i].y := yAux;
+end;
+Button7Click(Sender);
+end;
+
+
+procedure TForm1.Button5Click(Sender: TObject);
+Var
+i: integer;
+alfa : Real;
+begin
+// Aplica la Rotación Rz a todos los puntos del Cubo.
+// El ángulo esta determinado por alfa
+alfa := (5*Pi) / 180.0; // Grados a radianes
+for i := 1 to 5 do
+begin
+xAux := (Cubo[i].x * COS( -alfa )) + (Cubo[i].y * SIN( -alfa ));
+yAux := -(Cubo[i].x * SIN( -alfa )) + (Cubo[i].y * COS( -alfa ));
+Cubo[i].x := xAux;
+Cubo[i].y := yAux;
+end;
+Button7Click(Sender);
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+Var
+i: integer;
+alfa : Real;
+begin
+// Aplica la Rotación Rz a todos los puntos del Cubo.
+// El ángulo esta determinado por alfa
+alfa := (5*Pi) / 180.0; // Grados a radianes
+for i := 1 to 5 do
+begin
+xAux := (Cubo[i].x * COS( alfa )) + (Cubo[i].y * SIN( alfa ));
+yAux := -(Cubo[i].x * SIN( alfa )) + (Cubo[i].y * COS( alfa ));
+Cubo[i].x := xAux;
+Cubo[i].y := yAux;
+end;
+Button7Click(Sender);
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+var
+i: integer;
+begin
+Image1.canvas.Rectangle(0,0,500,500);
+  // Pinta el Piso del Cubo
+for i := 1 to 4 do
+  begin
+  P.x := round(Cubo[i].x)+250;
+  P.y := round(Cubo[i].y)+250;
+  Q.x := Round(Cubo[i+1].x)+250;
+  Q.y := Round(Cubo[i+1].y)+250;
+  Image1.Canvas.Pen.Color := clBlue;
+  Image1.Canvas.MoveTo(P.x, P.y);
+  Image1.Canvas.LineTo(Q.x, Q.y);
+  Image1.Canvas.Pen.Color := clBlack;
+
+  end;
+end;
+
+
+procedure TForm1.Button8Click(Sender: TObject);
+begin
+close();
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  I: Integer;
+begin
+Image1.canvas.Rectangle(0,0,500,500);
+// Piso del Cubo, note que Cubo[1] = Cubo[5]
+Cubo[1].x := +TamFig; Cubo[1].y := +TamFig; Cubo[1].z := -TamFig;
+Cubo[2].x := +TamFig; Cubo[2].y := -TamFig; Cubo[2].z := -TamFig;
+Cubo[3].x := -TamFig; Cubo[3].y := -TamFig; Cubo[3].z := -TamFig;
+Cubo[4].x := -TamFig; Cubo[4].y := +TamFig; Cubo[4].z := -TamFig;
+Cubo[5].x := +TamFig; Cubo[5].y := +TamFig; Cubo[5].z := -TamFig;
+  for I := 1 to 5 do
+  begin
+    Cubo[i].x := Cubo[i].x * 20;
+    Cubo[i].y := Cubo[i].y * 20;
+    Cubo[i].z := Cubo[i].z * 20;
+  end;
+end;
+
+end.

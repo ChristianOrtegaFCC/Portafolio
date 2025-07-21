@@ -1,0 +1,66 @@
+sistema de producción compuesto 
+por dos contenedores compartidos y dos brazos robots
+
+problema de sección crítica, donde en vez de un 
+único recurso compartido, en este caso hay dos.
+
+
+El sistema concurrente de producción está compuesto por dos contenedores 
+compartidos (Contenedor A y Contenedor B) y dos brazos robots (Brazo 1 y 
+Brazo 2). Detrás de cada brazo hay un operario que tiene como objetivo montar 
+unidades de un producto.
+
+Para producir cada unidad se necesita una pieza de 
+cada contenedor. Así que, el Brazo 1 primero trata de tomar una pieza del
+Contenedor A y después del Contenedor B. Una vez que dispone de ambas 
+piezas el operario ensambla el producto final.
+
+El brazo 2 primero toma una pieza del
+Contenedor B y después del Contenedor A, como paso previo al ensamblaje de 
+la unidad por parte del operario.
+
+
+1. Un brazo solo es capaz de tomar una pieza cada vez que accede al 
+contenedor.
+
+2. Para evitar colisiones entre los brazos, el acceso a cada contenedor es en
+exclusión mutua, es decir, los dos brazos no pueden simultáneamente 
+descargar piezas de un mismo contenedor.
+
+Implementación
+La clase BrazoProduccion debe ser capaz de trabajar con dos contenedores 
+de manera coordinada. Por tanto, los cambios para esta nueva versión son:
+
+el constructor de la clase BrazoProduccion debe tener como parámetro de 
+entrada dos contenedores (además de su identificador único y el número de 
+unidades del producto a montar); y el método run() debe trabajar con ambos 
+contenedores para el montaje de las unidades.
+
+
+Finalmente, la clase SistemaProduccion configura y ejecuta el sistema de 
+producción. y el orden en el que actúan los brazos sobre los 
+contenedores.
+
+¿Cómo se comporta el sistema con distintas configuraciones del 
+mismo: los brazos producen el mismo número de unidades del producto o 
+distinto, los contenedores tienen piezas suficientes o no las tienen, etc.?
+
+debe mostrarse como resultado la 
+ejecución que muestre la actividad de los brazos sobre los contenedores.
+
+Como ejemplo se presenta el inicio de una posible ejecución del sistema:
+Brazo 1: ha descargado una pieza del contenedor A
+Brazo 2: ha descargado una pieza del contenedor B
+Brazo 2: ha descargado una pieza del contenedor A
+Brazo 1: ha descargado una pieza del contenedor B
+Brazo 1: ha montado su producto 1 de 25
+Brazo 1: ha descargado una pieza del contenedor A
+Brazo 1: ha descargado una pieza del contenedor B
+Brazo 1: ha montado su producto 2 de 25
+Brazo 2: ha montado su producto 1 de 25
+Brazo 2: ha descargado una pieza del contenedor B
+Brazo 1: ha descargado una pieza del contenedor A
+Brazo 1: ha descargado una pieza del contenedor B
+Brazo 2: ha descargado una pieza del contenedor A
+Brazo 1: ha montado su producto 3 de 25
+Brazo 2: ha montado su producto 2 de 25

@@ -1,0 +1,98 @@
+std::string configuracion_electronica(int z){
+	short i, counter=0;char lastlet, lastnum;	bool jmp = false; 
+	short n=1,l=0,m=0,s=0;
+	
+	if (z <= 0 || z > 118){ error_caso(5); return ".l."; }
+	if (z == 1){ printf("1S"); Color(BLACK, RED); printf("1\n");  Color(BLACK, WHITE);return "1S1"; }
+	
+	for(i=1;i<=z;i++){
+		jmp = false;
+		
+		// Orbital S
+		if (i == 2 || i == 4 || i == 12 || i ==  20 || i ==  38 || i == 56 || i ==  88 ){
+			counter =0;
+			switch(i){
+				case 2:		lastlet = 'S';	printf("1");lastnum = '2';break;
+				case 4:		lastlet = 'P';	printf("2");lastnum = '2'; n=2; break;
+				case 12:	lastlet = 'P';	printf("3");lastnum = '3'; n=3; break;
+				case 20:	lastlet = 'd';	printf("4");lastnum = '3'; n=4; break;
+				case 38:	lastlet = 'd';	printf("5");lastnum = '4'; n=5; break;
+				case 56:	lastlet = 'F';	printf("6");lastnum = '4'; n=6; break;
+				case 88:	lastlet = 'F';	printf("7");lastnum = '5'; n=7; break;
+			}
+			printf("S");
+			if (i!= z){ Color(BLACK, RED); printf("2 "); jmp = true; Color(BLACK, WHITE);}
+		}
+		
+		// Orbital P
+		if (i == 10 || i == 18 || i == 36 || i ==  54 || i ==  86 || i == 118){
+			lastlet = 'S';	counter =0;
+			switch(i){
+				case 10:	printf("2");lastnum = '3';break;
+				case 18:	printf("3");lastnum = '4';break;
+				case 36:	printf("4");lastnum = '5';break;
+				case 54:	printf("5");lastnum = '6';break;
+				case 86:	printf("6");lastnum = '7';break;
+				case 118:	printf("7");lastnum = '8';break;
+			}
+			printf("P");
+			if (i!= z){Color(BLACK, RED); printf("6 ");jmp = true; Color(BLACK, WHITE);}
+		}
+		
+		
+		// Orbital d
+		if (i == 30 || i == 48 || i == 80 || i ==  112 ){
+			lastlet = 'P';	counter =0;
+			switch(i){
+				case 30:	printf("3");lastnum = '4';break;
+				case 48:	printf("4");lastnum = '5';break;
+				case 80:	printf("5");lastnum = '6';break;
+				case 112:	printf("6");lastnum = '7';break;
+			}
+			printf("d");
+			if (i!= z){Color(BLACK, RED); printf("10 ");jmp = true;Color(BLACK, WHITE);}
+		}
+		
+		// Orbital F
+		if (i == 70 || i == 102 ){
+			lastlet = 'd';	counter =0;
+			switch(i){
+				case 70:	printf("4");lastnum = '5';break;
+				case 102:	printf("5");lastnum = '6';break;
+			}
+			printf("F");
+			if (i!= z){Color(BLACK, RED); printf("14 ");jmp = true;Color(BLACK, WHITE);}
+		}
+		counter ++;
+	}
+	
+	
+	//if (jmp != true) printf("%c%c",lastnum,lastlet);
+	Color(BLACK, RED);
+		switch(z){
+			case 2: printf("2 ");break;			case 4: printf("2 ");break;
+			case 10: printf("6 ");break;		case 12: printf("2 ");break;
+			case 18: printf("6 ");break;		case 20: printf("2 ");break;
+			case 30: printf("10 ");break;		case 36: printf("6 ");break;
+			case 38: printf("2 ");break;		case 48: printf("10 ");break;
+			case 54: printf("6 ");break;		case 56: printf("2 ");break;
+			case 70: printf("14 ");break;		case 80: printf("10 ");break;
+			case 86: printf("6 ");break;		case 88: printf("2 ");break;
+			case 102: printf("14 ");break;		case 112: printf("10 ");break;
+			case 118: printf("6 ");break;		default: Color(BLACK, WHITE); printf("%c%c",lastnum,lastlet); Color(BLACK, RED); printf("%d",counter-1); //printf("%c%c%d",lastnum,lastlet,counter-1);  
+		}
+	Color(BLACK, WHITE);
+	printf("\n");
+	// n, l, m, s
+	
+	
+	/* numeros cuanticos del diferencial:
+	printf("numeros cuanticos del orbital diferencial:\n");
+	printf("n: %c",lastnum);
+	printf("l: %c");
+	printf("m: %c");
+	printf("s: ");
+	*/
+	
+	return "xd";
+}

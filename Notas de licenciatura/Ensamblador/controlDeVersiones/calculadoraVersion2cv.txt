@@ -1,0 +1,95 @@
+======================================================================================================================FIRST [well...]
+; pedimos numero 1 y numero 2, los compara... 
+; este pedo funciona bien
+
+.model small
+.stack 64
+.data
+    ; numeros
+    num1 db 0
+    num2 db 0
+    
+    ;simbolos
+    sim1 db 2bh
+    sim2 db 0
+    sim3 db 0
+    sim4 db 0
+    sim5 db 0 
+    
+    ;mensajes sencillos
+    msg1 db 10,13, 'Numeros iguales ','$'
+    msg2 db 10,13, 'Numero 1 mayor','$'
+    msg3 db 10,13, 'Numero 2 mayor ','$'
+    
+    ;mensajes para pedir
+    msjpd1 db 10,13, 'dame el numero 1: ','$'
+    msjpd2 db 10,13, 'dame el numero 2: ','$'
+    
+    
+.code
+    main:
+    mov ax,@data
+    mov ds,ax 
+    
+    ;pedimos numero 1
+    
+    mov ah, 09
+    lea dx, msjpd1
+    int 21h
+    mov ah, 01
+    int 21h
+    sub al, 30h
+    mov num1,al
+    
+    ;pedimos numero 2
+    
+    mov ah, 09
+    lea dx, msjpd2
+    int 21h
+    mov ah, 01
+    int 21h
+    sub al, 30h
+    mov num2,al
+    
+    
+    
+    mov al,num1
+    
+    cmp al,num2
+    
+    jc mayor2
+    jz igual
+    jnz mayor1
+    
+.exit 
+
+igual:
+    mov ah,09h
+    lea dx,msg1
+    int 21h
+
+
+.exit
+
+mayor1:
+    mov ah,09h
+    lea dx,msg2
+    int 21h
+
+
+.exit
+
+mayor2:
+    mov ah,09h
+    lea dx,msg3
+    int 21h
+
+
+.exit
+
+
+
+END
+
+
+=======================================================================================================================Second []
