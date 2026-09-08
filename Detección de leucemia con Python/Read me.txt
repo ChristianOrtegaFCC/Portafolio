@@ -1,0 +1,1 @@
+Los datasets en esta carpeta están incompletos, se incluyeron así simplemente de forma ilustrativa, el enlace para descargar el dataset original se encuentra en la documentación (usa al rededor de 10MB de almacenamiento).

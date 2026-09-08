@@ -1,0 +1,71 @@
+<style></style>
+
+<div class="experience-gallery">
+  <div *ngIf="isLoading" class="loading">
+    <div class="dice-container-loading">
+      <div class="spin-dice-loading">⚂</div>
+      <div style="transform: translateY(6px);">⚄</div>
+    </div>
+  </div>
+
+  <div *ngIf="!isLoading" class="experience-scroll-area">
+    <div class="menu-advice">
+      <img src="arrow-up.png" class="aux-arrow-2" alt="" />
+      <span style="margin-left: 10px; margin-top: -12px; align-self: center;">
+        <h4 style="margin-bottom: 2px; font-size: 1.125em;">{{ ui.t('nav.experience') }}</h4>
+        <p style="opacity: 0; white-space: nowrap; margin-top: -5px; font-size: 0.875em; font-style: italic;">{{ ui.t('section.pressDice') }}</p>
+      </span>
+      <img src="multimedia/multimedia/experiencia2.png" class="current-link" alt="" />
+    </div>
+
+    <div class="experience-card" *ngFor="let experiencia of experiencias" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+      <img class="experience-image" [src]="experiencia.img" alt="Imagen de experiencia" />
+
+      <div class="experience-content">
+        <div class="experience-header">
+          <div>
+            <h2 class="experience-title">{{ experiencia.nombre }}</h2>
+            <div class="experience-dates">
+              <span class="timeline-accent">⧗</span>
+              {{ ui.t('experience.from') }}: {{ experiencia.fecha_inicio | date: 'MMMM yyyy' : undefined : ui.currentLocale() }},
+              {{ ui.t('experience.to') }}:
+              {{ experiencia.fecha_fin ? (experiencia.fecha_fin | date: 'MMMM yyyy' : undefined : ui.currentLocale()) : ui.t('experience.present') }}.
+            </div>
+
+            <div class="experience-location">
+              <span class="timeline-accent">⚑</span>
+              {{ ui.t('experience.location') }}: {{ experiencia.ubicacion ? experiencia.ubicacion : ui.t('experience.notApplicable') }}
+              <br />
+              <a *ngIf="experiencia.url_ubicacion" [href]="experiencia.url_ubicacion" target="_blank" class="location-button">
+                {{ ui.t('experience.visitLocation') }} <img src="arrow-up-right.png" class="aux-arrow" alt="" />
+              </a>
+              <a [href]="experiencia.url_web" target="_blank" class="location-button">
+                <b>+</b> {{ ui.t('experience.moreInfo') }}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="experience-description">
+          {{ experiencia.descripcion }}
+        </p>
+
+        <div class="experience-section">
+          <h4>{{ ui.t('experience.responsibilities') }}:</h4>
+          <ul class="exp-responsabilidades">
+            <li *ngFor="let responsabilidad of experiencia.e_resp">{{ responsabilidad.descripcion }}</li>
+          </ul>
+        </div>
+
+        <div class="experience-section" style="margin-top: 26px;">
+          <h4>{{ ui.t('experience.achievements') }}:</h4>
+          <ul class="exp-logros">
+            <li *ngFor="let logro of experiencia.e_logs">{{ logro.descripcion }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="width: 10px; height: 100px; opacity: 0; pointer-events: none;"></div>
+  </div>
+</div>

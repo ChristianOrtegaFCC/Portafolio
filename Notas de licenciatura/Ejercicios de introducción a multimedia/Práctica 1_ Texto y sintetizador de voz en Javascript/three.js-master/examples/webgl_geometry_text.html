@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>three.js webgl - geometry - text</title>		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+	<body>
+	
+		<div id="info">
+			
+			<IMG SRC="buap.jpg" ALIGN = "LEFT" BORDER=0 ALT="NOMBRE">	
+			<H1><B><I>Amador Ortega Christian Amauri<BR> <BR> 201927821 <I><B></H1>
+			<HR width = "500">
+			<HR width = "380">	
+			
+		</div>
+		
+
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
+
+		<script type="module"> // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+			import * as THREE from 'three';
+			import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+			import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+
+			THREE.Cache.enabled = true;
+
+			///Mis frases célebres.../////////////////////////
+			const indices = new Map();
+			indices.set(0,"Gaston Berger");			indices.set(1,"Henry Ford");
+			indices.set(2,"Philip Roth");			indices.set(3,"Steve Jobs");
+			indices.set(4,"Lao Tse");				indices.set(5,"Peter Drucker");
+			indices.set(6,"Francis Bacon");			indices.set(7,"Ralph Waldo");
+			indices.set(8,"Gerard Duelo");			indices.set(9,"Jeffrey Eugenides");
+
+			const citas = new Map();
+			citas.set("Gaston Berger","El jefe de empresa debe ser un filosofo en accion");
+			citas.set("Henry Ford"   ,"No encuentres la falta; encuentra el remedio");
+			citas.set("Philip Roth"  ,"Deja de preocuparte por envejecer y piensa en crecer");
+			citas.set("Steve Jobs"   ,"Hagamos una muesca en el universo");
+			citas.set("Lao Tse" 	 ,"Para dirigir personas, camina detras de ellas");
+			citas.set("Peter Drucker","El resultado de un buen negocio es un cliente satisfecho");
+			citas.set("Francis Bacon","La ocasion hay que crearla, no esperar a que llegue");
+			citas.set("Ralph Waldo"  ,"Unicamente la obediencia tiene derecho al mando");
+			citas.set("Gerard Duelo" ,"Los buenos asesores son caros, pero los malos aun mas");
+			citas.set("Jeffrey Eugenides","Lo peor de la religion, era la gente religiosa");
+			
+			
+			var bucle = 1;
+			var clr = 0xffffff;
+			
+			
+			// Variables para crear las esferas
+			const radio_esfera = 8;			const radio_espiral = 60;
+			const inc_theta=2*Math.PI/120;	const inc_x=1.2;
+			let esferas = [];				const num_esferas = 40;
+			const xmintext=-230;			const xmaxtext=230;
+			let jth=0
+			
+
+			let container;
+			let camera, cameraTarget, scene, renderer;
+			let group, textMesh1, textMesh2, textMesh3, textMesh4, textGeo,textGeo2, materials;
+			let firstLetter = true;
+			let text = 'Presiona una tecla :)', // !!!!!!
+				bevelEnabled = true,
+				font = undefined,
+				fontName = 'optimer',
+				fontWeight = 'bold';
+			let autor = '-------------'; // !!!!!!!!!!!
+
+			const height = 5, // grosor
+				size = 15, // tamaño
+				hover = 50,// Altura, original = 35
+				curveSegments = 4,
+				bevelThickness = 2,
+				bevelSize = 1.8;
+
+			const mirror = true;
+			const fontMap = {
+
+				'helvetiker': 0,
+				'optimer': 1,
+				'gentilis': 2,
+				'droid/droid_sans': 3,
+				'droid/droid_serif': 4
+			};
+
+			const weightMap = {
+				'regular': 0,
+				'bold': 1
+			};
+
+			const reverseFontMap = [];
+			const reverseWeightMap = [];
+			
+			for ( const i in fontMap ) reverseFontMap[ fontMap[ i ] ] = i;
+			for ( const i in weightMap ) reverseWeightMap[ weightMap[ i ] ] = i;
+
+			let targetRotation = 0;
+			let targetRotationOnPointerDown = 0;
+			let pointerX = 0;
+			let pointerXOnPointerDown = 0;
+			let windowHalfX = window.innerWidth / 2;
+			let fontIndex = 1;
+
+			init();
+			animate();
+
+			function init() {
+
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				// CAMERA
+				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 1500 );
+				camera.position.set( 0, 400, 700 );
+				cameraTarget = new THREE.Vector3( 0, 150, 0 );
+
+				// SCENE
+				scene = new THREE.Scene();
+				scene.background = new THREE.Color(0x113f67);
+				scene.fog = new THREE.Fog( 0x000000, 250, 1400 );
+
+				// LIGHTS
+				const dirLight = new THREE.DirectionalLight( 0xffffff, 0.125 );
+				dirLight.position.set( 0, 0, 1 ).normalize();
+				scene.add( dirLight );
+
+				const pointLight = new THREE.PointLight( 0xffffff, 1.5 );
+				pointLight.color.setHSL( 0.5, 1, 0.5 ); // el primer parámetro marca el texto azulito
+				pointLight.position.set( 0, 100, 90 );
+				scene.add( pointLight );
+
+				materials = [
+					new THREE.MeshPhongMaterial( { color: 0xffffff, flatShading: true } ), // front
+					new THREE.MeshPhongMaterial( { color: 0xffffff } ) // side
+				];
+
+				group = new THREE.Group();
+				group.position.y = 100;
+
+				scene.add( group );
+				loadFont();
+
+				const plane = new THREE.Mesh(
+					new THREE.PlaneGeometry( 10000, 10000 ),
+					new THREE.MeshBasicMaterial( { color: 0xffffff, opacity: 0.5, transparent: true } )
+				);
+				plane.position.y = 100;
+				plane.rotation.x = - Math.PI / 2;
+				scene.add( plane );
+
+				// RENDERER
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+
+				// EVENTS
+				container.style.touchAction = 'none';
+				container.addEventListener( 'pointerdown', onPointerDown );
+				document.addEventListener( 'keypress', onDocumentKeyPress );
+				document.addEventListener( 'keydown', onDocumentKeyDown );
+
+				const params = {
+					f1: function(){
+						bucle ++;
+						if(bucle == 1) clr = 0xffffff;
+						if(bucle == 2) clr = 0xc7e8f7;
+						if(bucle == 3) clr = 0xaefff7;
+						if(bucle == 4) clr = 0x54f9ff;
+						if(bucle == 5) clr = 0x00f4e7;
+						if(bucle == 6) clr = 0x20dad9;
+						if(bucle == 7) clr = 0x17a9aa;
+						if(bucle == 8) clr = 0x127377;
+						if(bucle == 9) clr = 0x124650;
+						if(bucle == 10)clr = 0x122c32;
+						if(bucle == 11) clr = 0x000000;
+						if(bucle == 12) {bucle =1;  clr = 0xffffff; }
+						refresh_animation();
+						jth++;
+						
+					}
+				};
+
+				const gui = new GUI();
+				gui.add(params,'f1').name('Cambiar color');
+				gui.open();
+
+				window.addEventListener( 'resize', onWindowResize );
+			}
+
+			function onWindowResize() {
+				windowHalfX = window.innerWidth / 2;
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+			
+			function onDocumentKeyDown( event ) {
+				if ( firstLetter ) {
+					firstLetter = false;
+					text = '';
+					autor = '-';
+				}
+
+				const keyCode = event.keyCode;
+
+				// Tecla de borrado
+				if ( keyCode == 8 ) {
+					event.preventDefault();
+					text = text.substring( 0, text.length - 1 );
+					autor = '-';
+					refreshText();
+					return false;
+
+				}
+
+			}
+			
+			function onDocumentKeyPress( event ) { // C I T A   A L E A T O R I A . . . . . . (mediante el teclado)
+				const keyCode = event.which;
+				
+				// tecla de borrado
+				if ( keyCode == 8 ) {
+					event.preventDefault();
+				} else {
+					var aux = Math.floor( Math.random() * (10 - 0) + 0); // variable aleatoria
+					text = citas.get(indices.get(aux)); // obtenemos cita, mediante el autor
+					autor = "- "+indices.get(aux); // obtenemos autor mediante su índice
+					speechSynthesis.speak(new SpeechSynthesisUtterance(citas.get(indices.get(aux)))); // frase
+					speechSynthesis.speak(new SpeechSynthesisUtterance("dicho por"+autor)); // autor
+					refreshText();		// crea texto con frase y autor
+					refresh_animation(); // crea esferas
+				}
+
+			}
+
+			function loadFont() {
+				const loader = new FontLoader();
+				loader.load( 'fonts/' + fontName + '_' + fontWeight + '.typeface.json', function ( response ) {
+					font = response;
+					refreshText();
+					refresh_animation();
+				} );
+			}
+
+			function createText() {// C R E A   T E X T O   G E O M E T R I C O // 	. . . . . . . . . . .
+				// PARA CREAR LA CITA
+				textGeo = new TextGeometry( text, {
+					font: font,
+					size: size,
+					height: height,
+					curveSegments: curveSegments,
+					bevelThickness: bevelThickness,
+					bevelSize: bevelSize,
+					bevelEnabled: bevelEnabled
+
+				} );
+				textGeo.computeBoundingBox();
+				const centerOffset = - 0.5 * ( textGeo.boundingBox.max.x - textGeo.boundingBox.min.x ); //CENTRAR EL TEXTO
+				textMesh1 = new THREE.Mesh( textGeo, materials );
+				textMesh1.position.x = centerOffset;
+				textMesh1.position.y = hover;
+				textMesh1.position.z = 0;
+				textMesh1.rotation.x = 0;
+				textMesh1.rotation.y = Math.PI * 2;
+				group.add( textMesh1 );			
+				
+				//PARA CREAR AL AUTOR
+				textGeo2 = new TextGeometry( autor, {
+					font: font,
+					size: size,
+					height: height,
+					curveSegments: curveSegments,
+					bevelThickness: bevelThickness,
+					bevelSize: bevelSize,
+					bevelEnabled: bevelEnabled
+
+				} );
+				textGeo2.computeBoundingBox();
+				const centerOffset2 = - 0.5 * ( textGeo2.boundingBox.max.x - textGeo2.boundingBox.min.x );
+				textMesh3 = new THREE.Mesh( textGeo2, materials );
+				textMesh3.position.x = centerOffset2;
+				textMesh3.position.y = 25;
+				textMesh3.position.z = 0;
+				textMesh3.rotation.x = 0;
+				textMesh3.rotation.y = Math.PI * 2;
+				group.add( textMesh3 );
+				
+				
+				if ( mirror ) {
+					textMesh2 = new THREE.Mesh( textGeo, materials );
+					textMesh2.position.x = centerOffset;
+					textMesh2.position.y = - hover;
+					textMesh2.position.z = height;
+					textMesh2.rotation.x = Math.PI;
+					textMesh2.rotation.y = Math.PI * 2;
+					group.add( textMesh2 );
+					
+					textMesh4 = new THREE.Mesh( textGeo2, materials );
+					textMesh4.position.x = centerOffset2;
+					textMesh4.position.y = - 25;
+					textMesh4.position.z = height;
+					textMesh4.rotation.x = Math.PI;
+					textMesh4.rotation.y = Math.PI * 2;
+					group.add( textMesh4 );
+					
+				}
+			} // fin de la función createText();
+
+			function refreshText(){
+				group.remove( textMesh1 );
+				group.remove( textMesh3 );
+				if ( mirror ) group.remove( textMesh2 );
+				if ( mirror ) group.remove( textMesh4 );
+				if ( ! text ) return;
+				createText();
+			}
+			
+			function create_animation(){// 		E S F E R A S . . . . . . . . . . . . . . . . . . . . . . . . 
+				for(var i = 0;i<num_esferas;i++){
+					esferas[i] = new THREE.Mesh(
+					new THREE.SphereGeometry(radio_esfera,20,20),
+					new THREE.MeshBasicMaterial({color: clr ,opacity:0.5,transparent:false})
+					);
+					group.add(esferas[i]);
+				}
+				
+				for(var i=0;i<=num_esferas;i++){
+					esferas[i].position.x = xmintext+5/*+jth*/*inc_x+10*i*inc_x		-10;
+					esferas[i].position.y =radio_espiral*Math.cos(jth*inc_theta+i*2*Math.PI/num_esferas)+50;
+					esferas[i].position.z =radio_espiral*Math.sin(jth*inc_theta+i*2*Math.PI/num_esferas);
+				}
+			}
+			
+			function refresh_animation(){// 	E S F E R A S . . . . . . . . . . . . . . . . . . . . . . . . 
+				jth=jth+2;
+				for(var i=0;i<=num_esferas;i++) group.remove(esferas[i]);
+				create_animation();
+			}
+
+			function onPointerDown( event ) {
+				if ( event.isPrimary === false ) return;
+				pointerXOnPointerDown = event.clientX - windowHalfX;
+				targetRotationOnPointerDown = targetRotation;
+				document.addEventListener( 'pointermove', onPointerMove );
+				document.addEventListener( 'pointerup', onPointerUp );
+				//refresh_animation();
+
+			}
+
+			function onPointerMove( event ) {
+				if ( event.isPrimary === false ) return;
+				pointerX = event.clientX - windowHalfX;
+				targetRotation = targetRotationOnPointerDown + ( pointerX - pointerXOnPointerDown ) * 0.02;
+				refresh_animation();
+			}
+
+			function onPointerUp() {
+				if ( event.isPrimary === false ) return;
+				document.removeEventListener( 'pointermove', onPointerMove );
+				document.removeEventListener( 'pointerup', onPointerUp );
+				//refresh_animation();
+			}
+
+			function animate() {
+				requestAnimationFrame( animate );
+				jth=jth+2;
+				render();
+			}
+
+			function render() {
+				group.rotation.y += ( targetRotation - group.rotation.y ) * 0.05;
+				camera.lookAt( cameraTarget );
+				renderer.clear();
+				renderer.render( scene, camera );
+				
+				
+			}
+			
+
+		</script>
+
+	</body>
+</html>

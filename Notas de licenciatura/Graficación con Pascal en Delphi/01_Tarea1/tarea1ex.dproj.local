@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/08/11 10:55:39.000.446,=C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/19 23:20:41.000.257,=C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/19 23:27:15.000.598,C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\tarea1.dfm=C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/08/19 23:27:15.000.598,C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\tarea1.pas=C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/19 23:27:22.000.750,C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\tarea1ex.dproj=C:\Users\rocke\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="tarea1.pas"/>
+    <File Path="tarea1.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

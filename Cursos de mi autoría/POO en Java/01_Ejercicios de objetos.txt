@@ -1,0 +1,182 @@
+Encapsulamiento			x
+Sobrecarga de miembros		x
+Miembros estáticos		x
+Sobreescritura de miembros	
+Excepciones				x
+Herencia				
+Polimorfismo			x
+Clases abstractas			x
+Interfaces				x
+
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+identifica atributos y métodos de:
+
+fácil..............
+coche
+moto
+refrigerador
+microondas
+laptop
+smart tv
+celular
+hoja de papel
+cámara (de fotos)
+bicicleta
+consola de videojuegos
+
+
+medio..............
+instrumento musical
+persona
+cuchillo
+plato
+papel de baño
+jarra
+audifonos
+celular
+reloj
+luna
+planeta
+tenedor
+puerta
+número complejo
+fracción
+taza
+tijeras
+
+
+
+difícil............
+ser vivo
+tierra
+perfil de facebook
+resistol
+aceite
+gas
+película
+serie
+muñeca (parte del cuerpo)
+cráneo
+letra
+palabra
+hábito
+puesto de trabajo
+horario de trabajo
+humo
+alarma
+
+
+
+god................
+integral
+idioma
+pintura (obra de arte pues)
+tiempo
+polinomio
+canción
+agua
+aire
+fuego
+nota musical (do re mi fa...)
+luz
+obscuridad
+dios
+número entero
+número natural
+vida
+muerte
+color
+sentimiento
+olor
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+C:
+/////////////////////////////////////////////////////////////////////////
+clase coordenada{
+	private int x,y;
+
+	setcoordenadas(); // trátar con excepciones normales ( y una personalizada que impida ingresar un valor mayor a 500)
+	getcoordenadas();
+	
+}
+
+clase (abstacta) figura_2d{
+	private coordenadas c1,c2; // private
+
+	print_coordenadas()
+	print_perimetro()
+	print_area()
+	print_todo()
+	print_ejemplar()
+}
+
+Clase linea	extends figura_2d	(Sobrecarga de miembros (1 coordenada o 2 coordenadas)
+Clase rectángulo extends figura_2d (Sobrecarga de miembros (3 coordenadas o 4 coordenadas))
+
+
+-------------
+clase fighter(){
+
+}
+
+
+clase fight_arena(){
+
+}
+
+
+interface GameModes(){
+
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+
+Java:
+
+Clase ReyRata 	(encapsulamiento)
+Clase semilla,árbol,madera 	(Polimorfismo)
+Clase numero_en_bases_5_cifras	(Métodos estáticos)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+dado
+cubo rubik
+guitarra
+pila
+cola
+Legos
+Celular
+
+

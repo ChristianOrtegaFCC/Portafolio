@@ -1,0 +1,3 @@
+[Interpolación]:  https://es.slideshare.net/JeaNPavL/interpolaion-c
+
+[Polinomios Newton]:  https://sites.google.com/site/pamn12fi/practica7

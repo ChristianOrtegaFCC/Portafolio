@@ -1,0 +1,36 @@
+//// U2 (Programación orientada a objetos)
+x atributos de una clase ------------------------------------
+x métodos de una clase --------------------------------------
+  x método constructor --------------------------------------
+x entrada y salida de datos, for each
+x crea tres clases de lo que sea (en java)
+! Modelado UML <<<<<
+x encapsulamiento
+  x public
+  x private
+  x protected
+  x getters
+  x setters
+x sobrecarga de miembros 
+x miembros estáticos
+x sobreescritura de miembros
+x Excepciones
+  x try catch 
+  x throw
+  x throws
+x Herencia (simple)
+  x uso de super
+    x Herencia multiple 
+x polimorfismo
+x clases abstractas
+x interfaces...
+x Método destructor
+! ambiente gráfico (Graficación) (nomas un poquito) // esto en delphi <<<
+x programación genérica <<<
+! recursividad <<< esto en C alv
+
+> sealed classes
+> properties
+> principio de sustitucion
+x clase object ???
+> objetos anónimos

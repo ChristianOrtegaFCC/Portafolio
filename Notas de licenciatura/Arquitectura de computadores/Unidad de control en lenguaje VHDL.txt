@@ -1,0 +1,69 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+--xd
+entity UnidadDeControl is
+    port (
+        clk : in std_logic;
+        reset : in std_logic;
+        producto_seleccionado : in std_logic_vector(3 downto 0);
+        dinero_ingresado : in std_logic_vector(7 downto 0);
+        enviar_cambio : out std_logic;
+        soltar_producto : out std_logic
+    );
+end UnidadDeControl;
+
+architecture Behavioral of UnidadDeControl is
+    -- Estados de la mquina de estado
+    type estados_t is (idle, seleccionando_producto, recibiendo_dinero, dispensando_producto, enviando_cambio);
+	 signal estado_actual, estado_siguiente : estados_t;
+    signal acumulado_dinero : std_logic_vector(7 downto 0);
+    signal precio_producto : std_logic_vector(7 downto 0);
+	 signal cambio : std_logic_vector(7 downto 0);
+	 
+
+begin
+    -- Proceso de la maquina de estado
+    fsm_process : process(clk, reset)
+    begin
+		  acumulado_dinero <= dinero_ingresado;
+        if reset = '1' then
+            estado_actual <= idle;
+        elsif rising_edge(clk) then
+            estado_actual <= estado_siguiente;
+        end if;
+    end process fsm_process;
+
+    -- Logica de control
+   control_logic : process(estado_actual, producto_seleccionado, dinero_ingresado)
+   begin
+       estado_siguiente <= estado_actual;
+
+       case estado_actual is
+           when idle =>
+               if producto_seleccionado /= "0000" then
+                   estado_siguiente <= seleccionando_producto;
+               end if;
+           when seleccionando_producto =>
+                if dinero_ingresado /= "00000000" then
+                    estado_siguiente <= recibiendo_dinero;
+                    precio_producto <= "00000100";
+                end if;
+           when recibiendo_dinero =>
+                if acumulado_dinero >= precio_producto then
+                    estado_siguiente <= dispensando_producto;
+                end if;
+           when dispensando_producto =>
+                soltar_producto <= '1';
+                estado_siguiente <= enviando_cambio;
+           when enviando_cambio =>
+                enviar_cambio <= '1';
+                cambio <= acumulado_dinero - precio_producto;
+                estado_siguiente <= idle;					 
+           when others =>
+                estado_siguiente <= idle;
+        end case;
+    end process control_logic;
+
+end Behavioral;

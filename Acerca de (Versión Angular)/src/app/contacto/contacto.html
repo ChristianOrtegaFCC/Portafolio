@@ -1,0 +1,138 @@
+<div class="contacto-gallery">
+  <div class="contacto-scroll-area">
+    <span class="cards">
+      <div class="menu-advice">
+        <img src="arrow-up.png" class="aux-arrow-2" alt="" />
+        <span class="auxiliar-contacto-titulo" style="overflow: hidden; margin-left: 10px; width: 100%;">
+          <h4 style="margin-bottom: 2px; font-size: 1.125em;">{{ ui.t('nav.contact') }}</h4>
+          <p style="opacity: 0; white-space: nowrap; margin-top: -5px; font-size: 0.875em; font-style: italic;">{{ ui.t('section.pressDice') }}</p>
+        </span>
+        <img src="multimedia/multimedia/tel2.png" class="current-link" alt="" />
+      </div>
+
+      <div class="card" style="background-color: black; background-size: cover; background-repeat: no-repeat; background-position: center; opacity: 1; cursor: default;" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div class="skill">
+          <img class="skill-icon" src="multimedia/multimedia/email.png" alt="" (click)="copiarAlPortapapeles('dicelabs@outlook.com', '1')" />
+          <span class="copy-label">
+            {{ copied ? ui.t('contact.copied') : ui.t('contact.copyBusinessEmail') }}
+          </span>
+          <div class="skill-info">
+            <div class="skill-name">dicelabs&#64;outlook.com</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="skill-icon" src="multimedia/multimedia/email.png" alt="" (click)="copiarAlPortapapeles('christianortegafcc@gmail.com', '2')" />
+          <span class="copy-label">
+            {{ copied2 ? ui.t('contact.copied') : ui.t('contact.copyProfessionalEmail') }}
+          </span>
+          <div class="skill-info">
+            <div class="skill-name">christianortegafcc&#64;gmail.com</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="skill-icon" src="multimedia/multimedia/tel.png" alt="" (click)="copiarAlPortapapeles('+522224961605', '3')" />
+          <span class="copy-label">
+            {{ copied3 ? ui.t('contact.copied') : ui.t('contact.copyPhone') }}
+          </span>
+          <div class="skill-info">
+            <div class="skill-name">(+52) 2224961605</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="skill-icon" src="multimedia/multimedia/linkedin2.png" alt="" (click)="copiarAlPortapapeles('https://www.linkedin.com/in/christian-amauri-amador-ortega-0a5487237/', '4')" />
+          <span class="copy-label">
+            {{ copied4 ? ui.t('contact.copied') : ui.t('contact.copyLinkedIn') }}
+          </span>
+          <div class="skill-info">
+            <div class="skill-name">Christian Amauri Amador Ortega</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <img class="skill-icon" src="multimedia/multimedia/github4.png" alt="" (click)="copiarAlPortapapeles('https://github.com/ChristianOrtegaFCC', '5')" />
+          <span class="copy-label">
+            {{ copied5 ? ui.t('contact.copied') : ui.t('contact.copyGitHub') }}
+          </span>
+          <div class="skill-info">
+            <div class="skill-name">ChristianOrtegaFCC</div>
+          </div>
+        </div>
+      </div>
+
+      <a [href]="businessMailHref" target="_blank" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div class="card" style="background-image: url('outlook.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <h3 class="card-title">{{ ui.t('contact.businessEmail') }}</h3>
+          <p class="card-description">
+            <img src="arrow-up-right.png" class="aux-arrow" alt="" /> {{ ui.t('contact.sendBusinessEmail') }}: dicelabs&#64;outlook.com
+          </p>
+
+          <div class="contenedor-dados">
+            <div class="dado dado-3">{{ dados[4] }}</div>
+            <div class="dado dado-5">{{ dados[5] }}</div>
+          </div>
+        </div>
+      </a>
+
+      <a [href]="professionalMailHref" target="_blank" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div class="card" style="background-image: url('gmail.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <h3 class="card-title">{{ ui.t('contact.professionalEmail') }}</h3>
+          <p class="card-description">
+            <img src="arrow-up-right.png" class="aux-arrow" alt="" /> {{ ui.t('contact.sendProfessionalEmail') }}: christianortegafcc&#64;gmail.com
+          </p>
+
+          <div class="contenedor-dados">
+            <div class="dado dado-3">{{ dados[6] }}</div>
+            <div class="dado dado-5">{{ dados[7] }}</div>
+          </div>
+        </div>
+      </a>
+
+      <a [href]="whatsappHref" target="_blank" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div class="card" style="background-image: url('whatsapp.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <h3 class="card-title">{{ ui.t('contact.personalPhone') }}</h3>
+          <p class="card-description">
+            <img src="arrow-up-right.png" class="aux-arrow" alt="" /> {{ ui.t('contact.sendWhatsapp') }}: (+52)&nbsp;2224961605
+          </p>
+
+          <div class="contenedor-dados">
+            <div class="dado dado-3">{{ dados[8] }}</div>
+            <div class="dado dado-5">{{ dados[9] }}</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/christian-amauri-amador-ortega-0a5487237/" target="_blank" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div class="card" style="background-image: url('linkedin.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <h3 class="card-title">{{ ui.t('contact.linkedin') }}</h3>
+          <p class="card-description">
+            <img src="arrow-up-right.png" class="aux-arrow" alt="" /> {{ ui.t('contact.visit') }}
+          </p>
+
+          <div class="contenedor-dados">
+            <div class="dado dado-3">{{ dados[10] }}</div>
+            <div class="dado dado-5">{{ dados[11] }}</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://github.com/ChristianOrtegaFCC" target="_blank" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div class="card" style="background-image: url('github.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <h3 class="card-title">{{ ui.t('contact.github') }}</h3>
+          <p class="card-description">
+            <img src="arrow-up-right.png" class="aux-arrow" alt="" /> {{ ui.t('contact.visit') }}
+          </p>
+
+          <div class="contenedor-dados">
+            <div class="dado dado-3">{{ dados[12] }}</div>
+            <div class="dado dado-5">{{ dados[13] }}</div>
+          </div>
+        </div>
+      </a>
+
+      <div style="width: 10px; height: 100px; opacity: 0; pointer-events: none;"></div>
+    </span>
+  </div>
+</div>

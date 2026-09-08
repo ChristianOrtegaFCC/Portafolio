@@ -1,0 +1,82 @@
+<div class="project-gallery">
+  <div class="badge-snackbar" *ngIf="badgeSnackbarMessage" role="status" aria-live="polite">
+    {{ badgeSnackbarMessage }}
+  </div>
+
+  <div *ngIf="isLoading" class="loading">
+    <div class="dice-container-loading">
+      <div class="spin-dice-loading">⚂</div>
+      <div style="transform: translateY(6px);">⚄</div>
+    </div>
+  </div>
+
+  <div *ngIf="!isLoading" class="project-scroll-area">
+    <div class="menu-advice">
+      <img src="arrow-up.png" class="aux-arrow-2" alt="" />
+      <span style="margin-left: 10px; margin-top: -12px; align-self: center;">
+        <h4 style="margin-bottom: 2px; font-size: 1.125em;">{{ ui.t('nav.projects') }}</h4>
+        <p style="opacity: 0; white-space: nowrap; margin-top: -5px; font-size: 0.875em; font-style: italic;">{{ ui.t('section.pressDice') }}</p>
+      </span>
+      <img src="multimedia/multimedia/portafolio.png" class="current-link" alt="" />
+    </div>
+
+    <div class="project-card" *ngFor="let proyecto of proyectos" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+      <div class="project-badge-groups">
+        <div class="project-badges">
+          <button
+            type="button"
+            class="badge"
+            *ngFor="let insignia of proyecto.insignias"
+            [title]="insignia.nombre"
+            [attr.aria-label]="insignia.nombre"
+            (click)="showBadgeSnackbar(insignia.nombre, $event)">
+            <img [src]="'insignias/' + insignia.icono" [alt]="insignia.nombre" />
+            <span class="badge-tooltip">{{ insignia.nombre }}</span>
+          </button>
+        </div>
+
+        <div class="project-badges" *ngIf="proyecto.insigniasTecnologias?.length">
+          <button
+            type="button"
+            class="badge"
+            *ngFor="let insignia of proyecto.insigniasTecnologias"
+            [title]="insignia.nombre"
+            [attr.aria-label]="insignia.nombre"
+            (click)="showBadgeSnackbar(insignia.nombre, $event)">
+            <img [src]="'insignias-technologies/' + insignia.icono" [alt]="insignia.nombre" />
+            <span class="badge-tooltip">{{ insignia.nombre }}</span>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="project-distribution-badges"
+        *ngIf="proyecto.insigniasDistribucion?.length">
+        <button
+          type="button"
+          class="badge"
+          *ngFor="let insignia of proyecto.insigniasDistribucion"
+          [title]="insignia.nombre"
+          [attr.aria-label]="insignia.nombre"
+          (click)="showBadgeSnackbar(insignia.nombre, $event)">
+          <img [src]="'insignias-distribucion/' + insignia.icono" [alt]="insignia.nombre" />
+          <span class="badge-tooltip badge-tooltip-distribution">{{ insignia.nombre }}</span>
+        </button>
+      </div>
+
+      <img [src]="proyecto.img" alt="Imagen del proyecto" class="project-image" />
+      <div class="project-info">
+        <h3 class="project-title">{{ proyecto.nombre }}</h3>
+        <p class="project-description">{{ proyecto.descripcion }}</p>
+      </div>
+      <a [href]="proyecto.url_gh" target="_blank" class="project-link">
+        {{ ui.t('projects.more') }} <img src="arrow-up-right.png" class="aux-arrow" alt="" />
+      </a>
+      <div class="project-meta">
+        {{ proyecto.fecha | date: 'MMMM yyyy' : undefined : ui.currentLocale() }}
+      </div>
+    </div>
+
+    <div style="width: 10px; height: 100px; opacity: 0; pointer-events: none;"></div>
+  </div>
+</div>

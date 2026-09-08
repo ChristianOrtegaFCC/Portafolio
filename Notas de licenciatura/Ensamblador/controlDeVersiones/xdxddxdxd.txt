@@ -1,0 +1,50 @@
+PROCESAMIENTO AVANZADO DE LA PANTALLA =========
+
+o Interrupción 10 y sus desmadres disponibles
+	>xd
+	>xd
+	>xd
+
+
+o Adaptadores de vidio
+     >adaptadores comunes
+	>xd
+	>xd
+     >Unidades basicas del adaptador de vidio
+	> controlador de video
+	  Genera las señales de rastreo del monitor para el modo texto o gráfico
+	  y lee ahí la información de estado
+	> video de BIOS:
+	  Actúa como interfaz  con el adaptador de video, contiene rutinas, como para 
+	  establecer el cursor y desplegar caracteres
+	> área de despliegue de video:
+	  contiene la informacion que el monitor va a mostrar.
+	  
+	> Direcciones de inicio de los segmentos de despliegue de video:
+		>A000:[0] 
+		>B000:[0]
+		>B100:[0]
+		>B800:[0]
+
+o Especificaciones de video:
+
+La funcion 00H de la INT de BIOS puede designar el modo para el programa que se está ejecutando
+o puede conmutar entre texto y gráfico
+	ejemplo: 
+	
+	MOV AH, 00H ; PETICIÓN PARA DESIGNAR EL MODO
+	MOV AL, 03H ; TEXTO O ESTÁNDAR A COLOR 80 X 25
+	INT 10H     ; LLAMA AL BIOS
+
+podemos examinar el AX  para saber el tipo de monitor y en consecuencia, establecer el modo
+
+
+
+o MODO DE TEXTO
+Se usa para el despliegue normal de la pantalla de caracteres ASCII,
+proporciona acceso a todo el conjunto de 256 caracteres ASCII extendido.
+
+	> modos de texto 00(mono) y 01(color)
+	
+		>
+		> 

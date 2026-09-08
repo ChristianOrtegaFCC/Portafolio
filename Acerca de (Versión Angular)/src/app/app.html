@@ -1,0 +1,282 @@
+<style></style>
+
+<header class="navbar">
+  <button class="boton-menu-secundario" (click)="toggleMenu()"></button>
+
+  <div class="dados">
+    <div class="dado dado1" style="transform: rotate(28deg); margin-right: -4px;">&#9858;</div>
+    <div class="dado dado2" style="transform: translateY(6px);">&#9860;</div>
+  </div>
+
+  <div class="mi-nombre" style="transform: translateY(-3px);">
+    <span class="nombre-version-normal">
+      <h1 style="margin-bottom: -20px;">Christian Amauri Amador Ortega</h1>
+      <h3 style="transform: translateX(3px);">{{ ui.t('header.role.long') }}</h3>
+    </span>
+
+    <span class="nombre-version-abreviada" style="margin-top: 30px; opacity: 0.85;">
+      <h2 style="margin-bottom: -20px;">Christian Ortega</h2>
+      <h4 style="transform: translateX(3px);">{{ ui.t('header.role.short') }}</h4>
+    </span>
+
+    <span class="mensaje-presiona-los-dados">
+      <h4 style="margin-top: 3px;">{{ ui.t('header.pressMenu') }}</h4>
+      <img src="arrow-left.png" class="white-arrow-instruction" alt="" />
+    </span>
+  </div>
+
+  <div class="header-profile-cluster" (click)="$event.stopPropagation()">
+    <div class="header-profile-tools" [class.header-profile-tools-open]="mostrarMenuPerfil">
+      <div class="header-control-group">
+        <div class="language-picker">
+          <button
+            type="button"
+            class="header-control-button language-toggle"
+            (click)="toggleLanguageMenu($event)"
+            [attr.aria-label]="ui.t('language.open')"
+            [title]="ui.t('language.open')">
+            <img [src]="ui.currentLanguage().flag" [alt]="ui.currentLanguage().nativeLabel" class="control-flag" />
+            <span class="control-label">{{ ui.currentLanguage().shortLabel }}</span>
+            <span class="control-caret">&#9662;</span>
+          </button>
+
+          <div class="language-dropdown" *ngIf="mostrarMenuIdiomas">
+            <button
+              type="button"
+              class="language-option"
+              *ngFor="let language of ui.languages"
+              [class.active]="ui.language() === language.code"
+              (click)="selectLanguage(language.code, $event)">
+              <img [src]="language.flag" [alt]="language.nativeLabel" class="control-flag" />
+              <span>{{ language.nativeLabel }}</span>
+            </button>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="header-control-button theme-toggle"
+          (click)="toggleTheme()"
+          [attr.aria-label]="ui.isLightTheme() ? ui.t('theme.switchToDark') : ui.t('theme.switchToLight')"
+          [title]="ui.isLightTheme() ? ui.t('theme.switchToDark') : ui.t('theme.switchToLight')">
+          <span class="theme-symbol">{{ ui.themeSymbol() }}</span>
+        </button>
+      </div>
+
+      <div class="framework-badge" [attr.aria-label]="ui.t('header.angularBuilt')">
+        <img
+          [src]="ui.isLightTheme() ? 'assets/black-angular.png' : 'assets/white-angular.png'"
+          class="framework-badge-img"
+          alt="Angular logo" />
+        <span class="framework-badge-label">{{ ui.t('header.angularBuilt') }}</span>
+        <span class="framework-tooltip">{{ ui.t('header.angularBuilt') }}</span>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      class="profile-menu-trigger"
+      [class.profile-menu-trigger-active]="mostrarMenuPerfil"
+      (click)="toggleProfileMenu($event)"
+      [attr.aria-label]="ui.t('language.open')">
+      <img src="foto-perfil-2.png" class="img-perfil-img" alt="Foto de perfil" />
+    </button>
+  </div>
+</header>
+
+<div class="h-layout">
+  <div class="sidebar">
+    <nav class="sidebar-menu">
+      <a routerLink="/proyectos" routerLinkActive="active" class="menu-link">
+        <span class="my-menu-button">
+          <div class="pentagon figure" style="background-color: #32a6f3b0; top:-10px; left: 0px;"></div>
+          <div class="heptagon figure" style="background-color: #1f618db4; top:-15px; left: 40px;"></div>
+          <div class="hexagon figure" style="background-color: #1a5376ab; top:10px; left: 70px;"></div>
+          <div class="pentagon figure" style="background-color: #3498db69; top:-25px; left: 100px;"></div>
+          <div class="heptagon figure" style="background-color: #1f618db4; top:0px; left: 110px;"></div>
+
+          <img src="multimedia/multimedia/portafolio.png" alt="" />
+          <p>{{ ui.t('nav.projects') }}</p>
+        </span>
+      </a>
+
+      <a routerLink="/experiencia" routerLinkActive="active" class="menu-link">
+        <div class="my-menu-button">
+          <div class="pentagon figure" style="background-color: #38f33294; top:-10px; left: -20px;"></div>
+          <div class="pentagon figure" style="background-color: #38f33294; top:-10px; left: 195px;"></div>
+          <div class="heptagon figure" style="background-color: #238d1fb4; top:-15px; left: 130px;"></div>
+          <div class="hexagon figure" style="background-color: #1d761aab; top:0px; left: 80px;"></div>
+          <div class="pentagon figure" style="background-color: #34db4269; top:-25px; left: 50px;"></div>
+          <div class="heptagon figure" style="background-color: #1f8d1fb4; top:0px; left: 0px;"></div>
+
+          <img src="multimedia/multimedia/experiencia2.png" alt="" />
+          <p>{{ ui.t('nav.experience') }}</p>
+        </div>
+      </a>
+
+      <a routerLink="/formacion" routerLinkActive="active" class="menu-link">
+        <span class="my-menu-button">
+          <div class="heptagon figure" style="background-color: #89911fbb; top:-12px; left: 2px;"></div>
+          <div class="pentagon figure" style="background-color: #70761aab; top:10px; left: 10px;"></div>
+          <div class="hexagon figure" style="background-color: #d0db3469; top:-25px; left: 70px;"></div>
+          <div class="heptagon figure" style="background-color: #828d1fb4; top:0px; left: 90px;"></div>
+          <div class="pentagon figure" style="background-color: #f0f332ab; top:-25px; left: 140px;"></div>
+          <div class="hexagon figure" style="background-color: #f0f332ab; top:0px; left: 190px;"></div>
+
+          <img src="multimedia/multimedia/formacionx.png" alt="" />
+          <p>{{ ui.t('nav.education') }}</p>
+        </span>
+      </a>
+
+      <a routerLink="/perfil" routerLinkActive="active" class="menu-link">
+        <span class="my-menu-button">
+          <div class="hexagon figure" style="background-color: #9632f3b0; top:-10px; left: 0px;"></div>
+          <div class="hexagon figure" style="background-color: #9d1ec48e; top:-15px; left: 40px;"></div>
+          <div class="hexagon figure" style="background-color: #70761ab2; top:10px; left: 70px;"></div>
+          <div class="heptagon figure" style="background-color: #9034db69; top:-25px; left: 100px;"></div>
+          <div class="pentagon figure" style="background-color: #581f8db4; top:0px; left: 110px;"></div>
+          <div class="pentagon figure" style="background-color: #e6f33294; top:-10px; left: 199px;"></div>
+
+          <img src="multimedia/multimedia/pensamiento2.png" alt="" />
+          <p>{{ ui.t('nav.profile') }}</p>
+        </span>
+      </a>
+
+      <a routerLink="/contacto" routerLinkActive="active" class="menu-link">
+        <span class="my-menu-button">
+          <div class="pentagon figure" style="background-color: #dde2dd94; top:-10px; left: -20px;"></div>
+          <div class="pentagon figure" style="background-color: #caccca94; top:-10px; left: 195px;"></div>
+          <div class="heptagon figure" style="background-color: #838583b4; top:-15px; left: 130px;"></div>
+          <div class="hexagon figure" style="background-color: #686968ab; top:0px; left: 80px;"></div>
+          <div class="pentagon figure" style="background-color: #d9dbd969; top:-25px; left: 50px;"></div>
+          <div class="heptagon figure" style="background-color: #818381b4; top:0px; left: 0px;"></div>
+
+          <img src="multimedia/multimedia/tel2.png" alt="" />
+          <p>{{ ui.t('nav.contact') }}</p>
+        </span>
+      </a>
+    </nav>
+
+    <nav class="sidebar-menu menu-secundario" *ngIf="mostrarMenuSecundario">
+      <a routerLink="/proyectos" routerLinkActive="active" class="menu-link" (click)="ocultarMenu()">
+        <span class="my-menu-button">
+          <div class="pentagon figure" style="background-color: #32a6f3b0; top:-10px; left: 0px;"></div>
+          <div class="heptagon figure" style="background-color: #1f618db4; top:-15px; left: 40px;"></div>
+          <div class="hexagon figure" style="background-color: #1a5376ab; top:10px; left: 70px;"></div>
+          <div class="pentagon figure" style="background-color: #3498db69; top:-25px; left: 100px;"></div>
+          <div class="heptagon figure" style="background-color: #1f618db4; top:0px; left: 110px;"></div>
+
+          <img src="multimedia/multimedia/portafolio.png" alt="" />
+          <p>{{ ui.t('nav.projects') }}</p>
+        </span>
+      </a>
+
+      <a routerLink="/experiencia" routerLinkActive="active" class="menu-link" (click)="ocultarMenu()">
+        <div class="my-menu-button">
+          <div class="pentagon figure" style="background-color: #38f33294; top:-10px; left: -20px;"></div>
+          <div class="pentagon figure" style="background-color: #38f33294; top:-10px; left: 195px;"></div>
+          <div class="heptagon figure" style="background-color: #238d1fb4; top:-15px; left: 130px;"></div>
+          <div class="hexagon figure" style="background-color: #1d761aab; top:0px; left: 80px;"></div>
+          <div class="pentagon figure" style="background-color: #34db4269; top:-25px; left: 50px;"></div>
+          <div class="heptagon figure" style="background-color: #1f8d1fb4; top:0px; left: 0px;"></div>
+
+          <img src="multimedia/multimedia/experiencia2.png" alt="" />
+          <p>{{ ui.t('nav.experience') }}</p>
+        </div>
+      </a>
+
+      <a routerLink="/formacion" routerLinkActive="active" class="menu-link" (click)="ocultarMenu()">
+        <span class="my-menu-button">
+          <div class="heptagon figure" style="background-color: #89911fbb; top:-12px; left: 2px;"></div>
+          <div class="pentagon figure" style="background-color: #70761aab; top:10px; left: 10px;"></div>
+          <div class="hexagon figure" style="background-color: #d0db3469; top:-25px; left: 70px;"></div>
+          <div class="heptagon figure" style="background-color: #828d1fb4; top:0px; left: 90px;"></div>
+          <div class="pentagon figure" style="background-color: #f0f332ab; top:-25px; left: 140px;"></div>
+          <div class="hexagon figure" style="background-color: #f0f332ab; top:0px; left: 190px;"></div>
+
+          <img src="multimedia/multimedia/formacionx.png" alt="" />
+          <p>{{ ui.t('nav.education') }}</p>
+        </span>
+      </a>
+
+      <a routerLink="/perfil" routerLinkActive="active" class="menu-link" (click)="ocultarMenu()">
+        <span class="my-menu-button">
+          <div class="hexagon figure" style="background-color: #9632f3b0; top:-10px; left: 0px;"></div>
+          <div class="hexagon figure" style="background-color: #9d1ec48e; top:-15px; left: 40px;"></div>
+          <div class="hexagon figure" style="background-color: #70761ab2; top:10px; left: 70px;"></div>
+          <div class="heptagon figure" style="background-color: #9034db69; top:-25px; left: 100px;"></div>
+          <div class="pentagon figure" style="background-color: #581f8db4; top:0px; left: 110px;"></div>
+          <div class="pentagon figure" style="background-color: #e6f33294; top:-10px; left: 199px;"></div>
+
+          <img src="multimedia/multimedia/pensamiento2.png" alt="" />
+          <p>{{ ui.t('nav.profile') }}</p>
+        </span>
+      </a>
+
+      <a routerLink="/contacto" routerLinkActive="active" class="menu-link" (click)="ocultarMenu()">
+        <span class="my-menu-button">
+          <div class="pentagon figure" style="background-color: #dde2dd94; top:-10px; left: -20px;"></div>
+          <div class="pentagon figure" style="background-color: #caccca94; top:-10px; left: 195px;"></div>
+          <div class="heptagon figure" style="background-color: #838583b4; top:-15px; left: 130px;"></div>
+          <div class="hexagon figure" style="background-color: #686968ab; top:0px; left: 80px;"></div>
+          <div class="pentagon figure" style="background-color: #d9dbd969; top:-25px; left: 50px;"></div>
+          <div class="heptagon figure" style="background-color: #818381b4; top:0px; left: 0px;"></div>
+
+          <img src="multimedia/multimedia/tel2.png" alt="" />
+          <p>{{ ui.t('nav.contact') }}</p>
+        </span>
+      </a>
+
+      <div class="menu-mobile-controls" (click)="$event.stopPropagation()">
+        <div class="header-control-group mobile-control-group">
+          <div class="language-picker">
+            <button
+              type="button"
+              class="header-control-button language-toggle"
+              (click)="toggleLanguageMenu($event)"
+              [attr.aria-label]="ui.t('language.open')"
+              [title]="ui.t('language.open')">
+              <img [src]="ui.currentLanguage().flag" [alt]="ui.currentLanguage().nativeLabel" class="control-flag" />
+              <span class="control-label">{{ ui.currentLanguage().shortLabel }}</span>
+              <span class="control-caret">&#9662;</span>
+            </button>
+
+            <div class="language-dropdown language-dropdown-mobile" *ngIf="mostrarMenuIdiomas">
+              <button
+                type="button"
+                class="language-option"
+                *ngFor="let language of ui.languages"
+                [class.active]="ui.language() === language.code"
+                (click)="selectLanguage(language.code, $event)">
+                <img [src]="language.flag" [alt]="language.nativeLabel" class="control-flag" />
+                <span>{{ language.nativeLabel }}</span>
+              </button>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="header-control-button theme-toggle"
+            (click)="toggleTheme()"
+            [attr.aria-label]="ui.isLightTheme() ? ui.t('theme.switchToDark') : ui.t('theme.switchToLight')"
+            [title]="ui.isLightTheme() ? ui.t('theme.switchToDark') : ui.t('theme.switchToLight')">
+            <span class="theme-symbol">{{ ui.themeSymbol() }}</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="buap-logo-container">
+      <img src="multimedia/multimedia/buap-110.png" width="110" height="110" alt="" style="width: 110px; height: 110px; opacity: 0.6; pointer-events: none;" />
+    </div>
+
+    <div class="sidebar-version">
+      <i style="display: block;">{{ ui.t('footer.version') }}: 6</i>
+      <i style="display: block;">12/07/2026</i>
+    </div>
+  </div>
+
+  <main class="contenido" style="width: 100%; transform: translateX(5px);" (click)="ocultarMenu()">
+    <router-outlet />
+  </main>
+</div>

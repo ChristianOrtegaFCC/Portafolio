@@ -1,0 +1,17 @@
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\bin\Debug\net6.0\07_ChatConsola(18 oct).exe
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\bin\Debug\net6.0\07_ChatConsola(18 oct).deps.json
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\bin\Debug\net6.0\07_ChatConsola(18 oct).runtimeconfig.json
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\bin\Debug\net6.0\07_ChatConsola(18 oct).dll
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\bin\Debug\net6.0\07_ChatConsola(18 oct).pdb
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).AssemblyInfoInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).AssemblyInfo.cs
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).dll
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\refint\07_ChatConsola(18 oct).dll
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).pdb
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).genruntimeconfig.cache
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\ref\07_ChatConsola(18 oct).dll
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\diosd\Desktop\Programas de C#\07_ChatConsola(18 oct)\obj\Debug\net6.0\07_ChatConsola(18 oct).csproj.CopyComplete

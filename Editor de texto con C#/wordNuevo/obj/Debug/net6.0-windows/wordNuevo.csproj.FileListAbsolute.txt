@@ -1,0 +1,76 @@
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.exe
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.deps.json
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.runtimeconfig.json
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.dll
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.pdb
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.AssemblyReference.cache
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form1.resources
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.GenerateResource.cache
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfoInputs.cache
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfo.cs
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.CoreCompileInputs.cache
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.dll
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\refint\wordNuevo.dll
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.pdb
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.genruntimeconfig.cache
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\ref\wordNuevo.dll
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Properties.Resources.resources
+C:\Users\Asus_PC\source\repos\chatProyecto\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form2.resources
+I:\Files\Escritorio\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.exe
+I:\Files\Escritorio\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.deps.json
+I:\Files\Escritorio\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.runtimeconfig.json
+I:\Files\Escritorio\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.dll
+I:\Files\Escritorio\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.pdb
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.AssemblyReference.cache
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form1.resources
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form2.resources
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Properties.Resources.resources
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.GenerateResource.cache
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.GeneratedMSBuildEditorConfig.editorconfig
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfoInputs.cache
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfo.cs
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.CoreCompileInputs.cache
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.dll
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\refint\wordNuevo.dll
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.pdb
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.genruntimeconfig.cache
+I:\Files\Escritorio\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\ref\wordNuevo.dll
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.exe
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.deps.json
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.runtimeconfig.json
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.dll
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.pdb
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.AssemblyReference.cache
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form1.resources
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form2.resources
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Properties.Resources.resources
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.GenerateResource.cache
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfoInputs.cache
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfo.cs
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.CoreCompileInputs.cache
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.dll
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\refint\wordNuevo.dll
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.pdb
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.genruntimeconfig.cache
+C:\Users\rocke\Downloads\wordNuevo\wordNuevo\obj\Debug\net6.0-windows\ref\wordNuevo.dll
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.deps.json
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.runtimeconfig.json
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.dll
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\bin\Debug\net6.0-windows\wordNuevo.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.AssemblyReference.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form1.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Form2.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.Properties.Resources.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.GenerateResource.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfoInputs.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.AssemblyInfo.cs
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.csproj.CoreCompileInputs.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.dll
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\refint\wordNuevo.dll
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\wordNuevo.genruntimeconfig.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\10_wordNuevo\wordNuevo\obj\Debug\net6.0-windows\ref\wordNuevo.dll

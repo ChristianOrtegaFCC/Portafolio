@@ -1,0 +1,46 @@
+<div class="formacion-gallery">
+  <div *ngIf="isLoading" class="loading">
+    <div class="dice-container-loading">
+      <div class="spin-dice-loading">⚂</div>
+      <div style="transform: translateY(6px);">⚄</div>
+    </div>
+  </div>
+
+  <div *ngIf="!isLoading" class="formacion-scroll-area">
+    <div class="menu-advice">
+      <img src="arrow-up.png" class="aux-arrow-2" alt="" />
+      <span style="margin-left: 10px; margin-top: -12px; align-self: center;">
+        <h4 style="margin-bottom: 2px; font-size: 1.125em;">{{ ui.t('nav.education') }}</h4>
+        <p style="opacity: 0; white-space: nowrap; margin-top: -5px; font-size: 0.875em; font-style: italic;">{{ ui.t('section.pressDice') }}</p>
+      </span>
+      <img src="multimedia/multimedia/formacionx.png" class="current-link" alt="" />
+    </div>
+
+    <div class="formacion-card" *ngFor="let formacion of formaciones" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+      <div class="formacion-contenido">
+        <h3 class="formacion-nombre">{{ formacion.nombre }}</h3>
+        <h3 class="formacion-tipo">{{ formacion.tipo }}</h3>
+
+        <p class="formacion-descripcion">
+          {{ formacion.descripcion }}
+        </p>
+
+        <p class="formacion-fechas">
+          <span class="timeline-accent">⧗</span>
+          {{ ui.t('education.from') }}: {{ formacion.fecha_inicio | date: 'MMMM yyyy' : undefined : ui.currentLocale() }},
+          {{ ui.t('education.to') }}:
+          {{ formacion.fecha_fin ? (formacion.fecha_fin | date: 'MMMM yyyy' : undefined : ui.currentLocale()) : ui.t('education.present') }}.
+        </p>
+
+        <a [href]="formacion.url_info" target="_blank" class="formacion-info-button formacion-fechas">
+          <b>+</b> {{ ui.t('education.moreInfo') }} <span style="opacity: 0; pointer-events: none;">🡕</span>
+        </a>
+      </div>
+      <div class="formacion-imagen">
+        <img [src]="formacion.img" alt="Logo de la institución" class="imgfil" style="border: 1px black solid;" />
+      </div>
+    </div>
+
+    <div style="width: 10px; height: 100px; opacity: 0; pointer-events: none;"></div>
+  </div>
+</div>

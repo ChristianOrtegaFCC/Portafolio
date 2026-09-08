@@ -1,0 +1,28 @@
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\bin\Debug\webJsonOnline.exe.config
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\bin\Debug\webJsonOnline.exe
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\bin\Debug\webJsonOnline.pdb
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\bin\Debug\Newtonsoft.Json.xml
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.csproj.CopyComplete
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.exe
+C:\Users\diosd\Desktop\Programas de C#\webJsonOnline\obj\Debug\webJsonOnline.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\bin\Debug\webJsonOnline.exe.config
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\bin\Debug\webJsonOnline.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\bin\Debug\webJsonOnline.pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.csproj.AssemblyReference.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.csproj.SuggestedBindingRedirects.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.Form1.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.Properties.Resources.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.csproj.GenerateResource.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.csproj.CoreCompileInputs.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.csproj.CopyComplete
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\05_webJsonOnline(4 oct) #23\obj\Debug\webJsonOnline.pdb

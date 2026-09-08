@@ -1,0 +1,197 @@
+<div class="perfil-gallery">
+  <div class="perfil-scroll-area">
+    <div class="menu-advice">
+      <img src="arrow-up.png" class="aux-arrow-2" alt="" />
+      <span style="margin-left: 10px; margin-top: -12px; align-self: center;">
+        <h4 style="margin-bottom: 2px; font-size: 1.125em;">{{ ui.t('nav.profile') }}</h4>
+        <p style="opacity: 0; white-space: nowrap; margin-top: -5px; font-size: 0.875em; font-style: italic;">{{ ui.t('section.pressDice') }}</p>
+      </span>
+      <img src="multimedia/multimedia/pensamiento2.png" class="current-link" alt="" />
+    </div>
+
+    <div class="extra-content" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+      <div class="flex-container-perf">
+        <h3 style="letter-spacing: 11px;">{{ ui.t('profile.heading') }}</h3>
+      </div>
+      <p class="profile-summary">
+        {{ ui.t('profile.summary') }}
+      </p>
+    </div>
+
+    <div class="skill-container-container">
+      <div class="skill-container" style="background-color: #968d3c7e;" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div *ngIf="isLoading" class="loading" style="position: relative !important; transform: scale(0.5); left: 0px; top: 7px;">
+          <div class="dice-container-loading">
+            <div class="spin-dice-loading">⚂</div>
+            <div style="transform: translateY(6px);">⚄</div>
+          </div>
+        </div>
+
+        <span>
+          <div *ngIf="!isLoading" class="skill-category">
+            {{ ui.t('profile.softSkills') }}
+          </div>
+
+          <div class="skill" *ngFor="let habilidad of hb">
+            <img class="skill-icon" [src]="habilidad.img" alt="" />
+            <div class="skill-info">
+              <div class="skill-name">{{ habilidad.descripcion }}</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" [ngStyle]="{ width: habilidad.nivel + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div class="skill-container" style="background-color: #a569bd65;" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div *ngIf="isLoading2" class="loading" style="position: relative !important; transform: scale(0.5); left: 0px; top: 7px;">
+          <div class="dice-container-loading">
+            <div class="spin-dice-loading">⚂</div>
+            <div style="transform: translateY(6px);">⚄</div>
+          </div>
+        </div>
+
+        <span>
+          <div *ngIf="!isLoading2" class="skill-category">
+            {{ ui.t('profile.languages') }}
+          </div>
+
+          <div class="skill" *ngFor="let habilidad of lenguajes">
+            <img class="skill-icon" [src]="habilidad.img" alt="" />
+            <div class="skill-info">
+              <div class="skill-name">{{ habilidad.descripcion }}</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" [ngStyle]="{ width: habilidad.nivel + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div class="skill-container" style="background-color: #D2A3D461;" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div *ngIf="isLoading3" class="loading" style="position: relative !important; transform: scale(0.5); left: 0px; top: 7px;">
+          <div class="dice-container-loading">
+            <div class="spin-dice-loading">⚂</div>
+            <div style="transform: translateY(6px);">⚄</div>
+          </div>
+        </div>
+
+        <span>
+          <div *ngIf="!isLoading3" class="skill-category">
+            {{ ui.t('profile.development') }}
+          </div>
+
+          <div class="skill" *ngFor="let habilidad of desarrollo">
+            <img class="skill-icon" [src]="habilidad.img" alt="" />
+            <div class="skill-info">
+              <div class="skill-name">{{ habilidad.descripcion }}</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" [ngStyle]="{ width: habilidad.nivel + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div class="skill-container" style="background-color: #D2A3D461;" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div *ngIf="isLoading4" class="loading" style="position: relative !important; transform: scale(0.5); left: 0px; top: 7px;">
+          <div class="dice-container-loading">
+            <div class="spin-dice-loading">⚂</div>
+            <div style="transform: translateY(6px);">⚄</div>
+          </div>
+        </div>
+
+        <span>
+          <div *ngIf="!isLoading4" class="skill-category">
+            {{ ui.t('profile.dataCloud') }}
+          </div>
+
+          <div class="skill" *ngFor="let habilidad of bddyn">
+            <img class="skill-icon" [src]="habilidad.img" alt="" />
+            <div class="skill-info">
+              <div class="skill-name">{{ habilidad.descripcion }}</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" [ngStyle]="{ width: habilidad.nivel + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div class="skill-container" style="background-color: #A8B8C075;" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div *ngIf="isLoading5" class="loading" style="position: relative !important; transform: scale(0.5); left: 0px; top: 7px;">
+          <div class="dice-container-loading">
+            <div class="spin-dice-loading">⚂</div>
+            <div style="transform: translateY(6px);">⚄</div>
+          </div>
+        </div>
+
+        <span>
+          <div *ngIf="!isLoading5" class="skill-category">
+            {{ ui.t('profile.theory') }}
+          </div>
+
+          <div class="skill" *ngFor="let habilidad of teoria">
+            <img class="skill-icon" [src]="habilidad.img" alt="" />
+            <div class="skill-info">
+              <div class="skill-name">{{ habilidad.descripcion }}</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" [ngStyle]="{ width: habilidad.nivel + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+
+      <div class="skill-container" style="background-color: #A8B8C075;" (mouseenter)="playSound()" (mouseleave)="pauseSound()">
+        <div *ngIf="isLoading6" class="loading" style="position: relative !important; transform: scale(0.5); left: 0px; top: 7px;">
+          <div class="dice-container-loading">
+            <div class="spin-dice-loading">⚂</div>
+            <div style="transform: translateY(6px);">⚄</div>
+          </div>
+        </div>
+
+        <span>
+          <div *ngIf="!isLoading6" class="skill-category">
+            {{ ui.t('profile.infrastructure') }}
+          </div>
+
+          <div class="skill" *ngFor="let habilidad of tecnologia">
+            <img class="skill-icon" [src]="habilidad.img" alt="" />
+            <div class="skill-info">
+              <div class="skill-name">{{ habilidad.descripcion }}</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar" [ngStyle]="{ width: habilidad.nivel + '%' }"></div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+
+    <div style="justify-content: center; display: flex; flex-direction: column; align-items: center;">
+      <div class="capturas-computrabajo-titulo">
+        <h2 style="align-self: center; transform: translateY(17px);">{{ ui.t('profile.valuesTitle') }}</h2>
+        <p class="profile-note">
+          {{ ui.t('profile.valuesNote') }}
+        </p>
+      </div>
+
+      <div class="scroll-wrapper">
+        <button (click)="scrollLeft()" class="perf-button" style="border-left: 1px white solid;"> ◀ </button>
+        <div #scrollContainer class="scroll-container">
+          <img class="val-img" src="5.png" alt="" />
+          <img class="val-img" src="6.png" alt="" />
+          <img class="val-img" src="4.png" alt="" />
+          <img class="val-img" src="1.png" alt="" />
+          <img class="val-img" src="2.png" alt="" />
+          <img class="val-img" src="3.png" alt="" />
+        </div>
+        <button (click)="scrollRight()" class="perf-button" style="border-right: 1px white solid;"> ▶ </button>
+      </div>
+    </div>
+
+    <div style="width: 10px; height: 100px; opacity: 0; pointer-events: none;"></div>
+  </div>
+</div>

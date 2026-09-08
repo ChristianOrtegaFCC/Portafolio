@@ -1,0 +1,581 @@
+.contacto-gallery {
+  position: relative;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #1a1a1a99;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.contacto-scroll-area {
+  overflow-y: scroll;
+  padding: 0rem;
+  gap: 0.5rem;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  border: 3px solid transparent;
+}
+
+.card {
+  position: relative;
+  width: 100% !important;
+  height: 210px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
+  transition: transform 0.3s ease;
+  opacity: 0.75;
+  letter-spacing: -0.3px;
+  
+}
+
+.menu-advice{
+  overflow:visible;
+  position: sticky;
+  opacity: 1;
+  margin-top: -7px;
+  padding-left: 15px;
+  padding-top: 5px;
+  display: none;
+  height: 35px;
+  border: 1px rgba(255, 255, 255, 0.678) solid;
+  color: #ebebeb;
+  background-color: black;
+  border-radius: 4px;
+  /*animation: aparecer 5s ease-in-out forwards;*/
+  /*transition: transform 0.5s ease-out;*/
+  /*overflow: hidden;*/
+  
+}
+
+.menu-advice:hover{
+  opacity: 1;
+  transform: scale(1.015);
+  transition: 0.2s ease-in-out;
+}
+
+.menu-advice:hover
+.aux-arrow-2{
+  animation: bounce 0.6s ease-in-out infinite alternate;
+  opacity: 1;
+}
+
+.menu-advice:hover p{
+  opacity: 1 !important;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-advice:hover
+.current-link{
+  opacity: 0;
+  /*left: 12px;*/
+  
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0);}
+  100% { transform: translateY(-15px); }
+}
+
+.aux-arrow-2{
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  margin-left: -5px;
+}
+
+.current-link{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  /*right: 20px !important;*/
+  filter: invert(1) brightness(1);
+  /*left: 20px;*/
+  transform: translateX(-5px);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border: 1px solid #ffffff;
+  opacity: 1;
+  z-index: 2;
+}
+
+.card-imagecrd {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s ease;
+  filter: brightness(0.6);
+  opacity: 0.8;
+}
+
+.card:hover .card-imagecrd {
+  filter: brightness(0.3);
+  opacity: 1;
+}
+
+.card:hover .card-description {
+  opacity: 1;
+}
+
+.card-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  text-align: left;
+  padding-right: 10px;
+}
+
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  max-width: 70%;
+  opacity: 0;
+  text-align: left;
+}
+
+.card .contenedor-dados .dado-5 {
+  position: relative;
+  color: #ffffffb4;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.card:hover .contenedor-dados .dado-5 {
+  color: #ffffffb4;
+}
+
+.contenedor-dados {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  transform: scale(0.4);
+  bottom: -45px;
+  right: -63px;
+  display: flex;
+  gap: 1px;
+}
+
+.dado {
+  font-size: 100px;
+  position: absolute;
+  transition: transform 0.6s ease-in-out, left 0.6s ease-in-out;
+}
+
+.dado.dado-5 {
+  left: 60px;
+  top: 10px;
+  z-index: 2;
+}
+
+.contenedor-dados:hover .dado-5 {
+  left: 90px;
+}
+
+.card:hover .dado-5 {
+  left: 90px;
+}
+
+.dado.dado-3 {
+  left: 60px;
+  z-index: 1;
+  transform-origin: 50% 55%;
+  opacity: 0;
+  color: #ffffffb4;
+  transition: left 0.6s ease-in-out, opacity 1s ease-in-out;
+}
+
+.card:hover .dado-3 {
+  animation: girar_antihorario 1s ease-in-out forwards;
+  left: 23px;
+  opacity: 1;
+  top: 4px;
+}
+
+.card:not(:hover) .dado-3 {
+  animation: girar_horario 1s ease-in-out forwards;
+  left: 60px;
+  opacity: 0;
+  top: 4px;
+}
+
+
+.cards {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0.5rem;
+  overflow-x:hidden;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  background: #ffffff00;
+  padding: 1rem;
+  margin-bottom: -30px;
+}
+
+.skill-container {
+  border: 1px black solid;
+  border-radius: 3px;
+  background-color: #767b80;
+  padding-bottom: 25px;
+}
+
+.skill-icon:hover~.copy-label {
+  opacity: 1;
+}
+
+.copy-label {
+  position: absolute;
+  border: 1px white solid;
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 25px;
+  margin-top: 22px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  transform: scale(0.82);
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.skill-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #dddddd00;
+  border-radius: 5px;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2) !important;
+}
+
+.skill-info {
+  flex: 1;
+  margin-left: -10px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  color: #ffffffc4;
+  cursor: text;
+}
+
+.skill-bar-container {
+  background: #5e5e5e;
+  height: 8px;
+  border-radius: 0px;
+  width: 95%;
+  overflow: hidden;
+  margin-top: -3px;
+}
+
+.skill-bar {
+  height: 100%;
+  background: linear-gradient(to right, #5d0070, #9700c5);
+}
+
+.skill-category {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  opacity: 0.9;
+  z-index: 9999;
+  animation: fadeout 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.aux-arrow{
+  width: 0.8em;
+  vertical-align: middle;
+  filter: invert(1) brightness(2);
+  scale: 0.7;
+  margin-top: -1px;
+}
+
+@keyframes girar_antihorario {
+  0% { transform: rotate(0deg); }
+  100% {transform: rotate(-520deg); }
+}
+
+@keyframes girar_horario {
+  0% { transform: rotate(20deg); }
+  100% { transform: rotate(540deg); }
+}
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+
+@media (max-width: 700px) {
+  .skill{
+    transform: translateX(-9px);
+  }
+
+  .skill-name{
+    transform: translateX(-2px);
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 12px;
+  }
+
+  .cards{
+    padding-left: 14px;
+    padding-right: 13px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .dado {
+    scale: 0.9;
+  }
+
+  .dado-3 {
+    margin-left: 10px;
+  }
+
+  .menu-advice{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    /*height: 80px;*/
+
+    height: 97%;
+  }
+
+  .auxiliar-contacto-titulo{
+    margin-top: -20px !important;
+  }
+
+  .menu-advice p{
+    white-space: normal !important;
+    line-height: 0.9;
+    margin-top: 5px !important;
+  }
+
+
+}
+
+
+@media (max-width: 454px){
+  .menu-advice{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px !important;
+    height: 45px;
+    top: -6px;
+    z-index: 5;
+    align-self: start;
+    grid-column: 1 / -1;
+  }
+
+  .menu-advice p{
+    transform: translateY(-5px);
+  }
+}
+
+/* Light theme palette: tweak these values to recolor the Contact tab. */
+:host-context([data-theme='light']) {
+  --contact-light-frame-border: #cbb3df;
+  --contact-light-gallery-bg: rgba(224, 211, 235, 0.56);
+  --contact-light-card-border: rgba(205, 177, 223, 0.92);
+  --contact-light-card-border-hover: #111111;
+  --contact-light-card-shadow: rgba(182, 149, 200, 0.36);
+  --contact-light-primary-card-bg: rgba(237, 223, 237, 0.96);
+  --contact-light-primary-card-text: #080808;
+  --contact-light-chip-bg: #e8cad8;
+  --contact-light-chip-border: #cca6ba;
+  --contact-light-chip-text: #101010;
+  --contact-light-bar-track: rgba(196, 168, 214, 0.5);
+  --contact-light-bar-fill: linear-gradient(to right, #dfb3c8, #bbdced);
+  --contact-light-menu-bg: rgba(241, 227, 248, 0.98);
+  --contact-light-menu-border: rgba(205, 177, 223, 0.92);
+  --contact-light-menu-text: #101010;
+  --contact-light-scrollbar: rgba(188, 156, 209, 0.96);
+  --contact-light-toast-bg: #f3dce8;
+  --contact-light-toast-text: #101010;
+}
+
+:host-context([data-theme='light']) .contacto-gallery {
+  background-color: var(--contact-light-gallery-bg);
+  border-color: var(--contact-light-frame-border);
+}
+
+:host-context([data-theme='light']) .card {
+  border-color: var(--contact-light-card-border);
+  box-shadow: 0 6px 16px var(--contact-light-card-shadow);
+  opacity: 0.98;
+}
+
+:host-context([data-theme='light']) .card:hover,
+:host-context([data-theme='light']) .cards > a .card:hover {
+  border-color: var(--contact-light-card-border-hover);
+}
+
+:host-context([data-theme='light']) .cards > .card:first-of-type {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+:host-context([data-theme='light']) .cards > a .card {
+  background-color: rgba(237, 219, 232, 0.34);
+  background-blend-mode: multiply;
+  opacity: 0.95;
+}
+
+:host-context([data-theme='light']) .cards > a .card:hover {
+  background-color: rgba(229, 207, 222, 0.42);
+  opacity: 1;
+}
+
+:host-context([data-theme='light']) .cards > .card:first-of-type .skill-name {
+  color: #ffffff !important;
+}
+
+:host-context([data-theme='light']) .cards > .card:first-of-type .skill-icon {
+  filter: invert(1) brightness(1.05);
+}
+
+:host-context([data-theme='light']) .cards > a .card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(236, 184, 209, 0.34),
+      rgba(181, 219, 236, 0.28) 55%,
+      rgba(240, 220, 160, 0.28)
+    );
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0.92;
+}
+
+:host-context([data-theme='light']) .cards > a .card:hover::before {
+  opacity: 0.55;
+}
+
+:host-context([data-theme='light']) .card-title,
+:host-context([data-theme='light']) .card-description,
+:host-context([data-theme='light']) .skill-name {
+  color: #ffffff;
+}
+
+:host-context([data-theme='light']) .card-title {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+:host-context([data-theme='light']) .card-description {
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+:host-context([data-theme='light']) .copy-label {
+  background-color: var(--contact-light-chip-bg);
+  border-color: var(--contact-light-chip-border);
+  color: var(--contact-light-chip-text);
+  box-shadow: 0 0 8px 2px rgba(76, 86, 96, 0.2);
+}
+
+:host-context([data-theme='light']) .skill-bar-container {
+  background: var(--contact-light-bar-track);
+}
+
+:host-context([data-theme='light']) .skill-bar {
+  background: var(--contact-light-bar-fill);
+}
+
+:host-context([data-theme='light']) .menu-advice {
+  background-color: var(--contact-light-menu-bg);
+  border-color: var(--contact-light-menu-border);
+  color: var(--contact-light-menu-text);
+  box-shadow: 0 6px 16px rgba(76, 86, 96, 0.16);
+}
+
+:host-context([data-theme='light']) .current-link {
+  filter: brightness(0) saturate(100%);
+}
+
+:host-context([data-theme='light']) .toast {
+  background-color: var(--contact-light-toast-bg);
+  color: var(--contact-light-toast-text);
+}
+
+:host-context([data-theme='light']) .cards::-webkit-scrollbar-thumb,
+:host-context([data-theme='light']) .contacto-scroll-area::-webkit-scrollbar-thumb {
+  background-color: var(--contact-light-scrollbar);
+}

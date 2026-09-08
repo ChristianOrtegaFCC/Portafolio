@@ -1,0 +1,40 @@
+Modelado UML{
+	// El pdf es la mejor info de esto xd (Mejor lee eso antes que cualquiera de estos), pero por si las dudas, aquí hay más:
+
+	[1]: https://virtual.itca.edu.sv/Mediadores/ads/213_tipos_de_relaciones.html
+	[2]: https://www.lucidchart.com/pages/es/que-es-el-lenguaje-unificado-de-modelado-uml
+	[3]: https://www.teatroabadia.com/es/uploads/documentos/iagramas_del_uml.pdf
+	[4]: https://diagramasuml.com/
+}
+
+
+Excepciones{
+	[1]: http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/excepciones/excepciones.htm
+	[2]: https://es.acervolima.com/programa-java-para-manejar-la-division-por-cero-
+
+}
+
+
+interfaces{
+	una interfaz es una madre que especifica qué se debe hacer, pero no cómo hacerlo. El cómo hacerlo se
+	especificará en cada Clase que implemente la interfaz, por separado.
+
+	//ejemplo de interface:
+	interface Trucos{
+		Pelota_Truco(); // a un objeto de tipo perro, se la lanzas y la trae, a un objeto de tipo foca se la lanzas y hace trucos de equilibrio
+		Dar_amor(); // un objeto de tipo perro te lame, un objeto de tipo gato se frota en tu pierna
+	}
+	
+	una interface puede tener atributos, pero todos serán static, o constantes creo, de esto no me acuerdo xdxd
+	pero una de las 2. Sin embargo, el principal atractivo de una interface es enlistar los métodos que la clase
+	que la implemente debe incluir.
+	
+	[1]: https://javadesdecero.es/intermedio/interfaces-ejemplos/
+
+}
+
+
+Programación genérica{
+	Programación genérica en C++ [1]: https://es.slideshare.net/PedroHugoValenciaMorales/tema4-programacin-generica
+
+}

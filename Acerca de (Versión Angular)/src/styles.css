@@ -1,0 +1,178 @@
+:root {
+  color-scheme: dark;
+  --page-bg: #000000;
+  --page-text: #f5f5f5;
+  --shell-bg: #0e0e0e;
+  --shell-surface: #1a1a1a;
+  --shell-border: #727272;
+  --shell-highlight: #0e0e0ec9;
+  --shell-strong-border: #ffffff;
+  --content-overlay-start: rgba(0, 0, 0, 0.9);
+  --content-overlay-end: rgba(0, 0, 0, 0.9);
+  --control-bg: rgba(255, 255, 255, 0.05);
+  --control-bg-hover: rgba(255, 255, 255, 0.12);
+  --control-border: rgba(255, 255, 255, 0.28);
+  --control-border-hover: rgba(255, 255, 255, 0.78);
+  --control-text: #f8fafc;
+  --dropdown-bg: rgba(12, 12, 12, 0.98);
+  --dropdown-border: rgba(255, 255, 255, 0.18);
+  --dropdown-text: #f8fafc;
+  --dropdown-option-bg: rgba(255, 255, 255, 0.08);
+  --dropdown-option-border: rgba(255, 255, 255, 0.14);
+  --profile-chip-bg: rgba(255, 255, 255, 0.05);
+  --profile-chip-bg-hover: rgba(255, 255, 255, 0.12);
+  --profile-chip-border: rgba(255, 255, 255, 0.7);
+  --profile-chip-border-hover: #ffffff;
+  --tooltip-bg: rgba(0, 0, 0, 0.95);
+  --tooltip-text: rgba(255, 255, 255, 0.92);
+  --tooltip-border: rgba(255, 255, 255, 0.85);
+  --sidebar-footnote: rgba(255, 255, 255, 0.26);
+  --mobile-menu-divider: rgba(255, 255, 255, 0.14);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --page-bg: #e8e5e9;
+  --page-text: #34323a;
+  --shell-bg: #c2c6cc;
+  --shell-surface: #d5d6d9;
+  --shell-border: #7d848e;
+  --shell-highlight: rgba(205, 208, 214, 0.94);
+  --shell-strong-border: #676d76;
+  --content-overlay-start: rgba(224, 220, 226, 0.88);
+  --content-overlay-end: rgba(214, 219, 224, 0.92);
+  --control-bg: rgba(243, 244, 246, 0.82);
+  --control-bg-hover: rgba(228, 230, 234, 0.96);
+  --control-border: #a7aeb7;
+  --control-border-hover: #8b929c;
+  --control-text: #3f434b;
+  --dropdown-bg: rgba(247, 247, 249, 0.98);
+  --dropdown-border: #b0b6bf;
+  --dropdown-text: #3f434b;
+  --dropdown-option-bg: #eceef1;
+  --dropdown-option-border: #c3c8d0;
+  --profile-chip-bg: rgba(244, 245, 247, 0.88);
+  --profile-chip-bg-hover: rgba(231, 233, 237, 0.98);
+  --profile-chip-border: #adb3bc;
+  --profile-chip-border-hover: #8e949e;
+  --tooltip-bg: #f7f7f8;
+  --tooltip-text: #41454d;
+  --tooltip-border: #bcc1c8;
+  --sidebar-footnote: rgba(63, 67, 75, 0.74);
+  --mobile-menu-divider: rgba(117, 123, 132, 0.28);
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--page-text);
+  font-family: "Times New Roman", Times, serif;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.navbar,
+.sidebar,
+.menu-secundario,
+.header-control-button,
+.framework-badge,
+.framework-tooltip,
+.language-dropdown,
+.language-option,
+.sidebar-version,
+.mensaje-presiona-los-dados {
+  transition:
+    background-color 0.25s ease-in-out,
+    border-color 0.25s ease-in-out,
+    color 0.25s ease-in-out,
+    box-shadow 0.25s ease-in-out;
+}
+
+.navbar {
+  background-color: var(--shell-bg) !important;
+  color: var(--page-text) !important;
+  border-bottom-color: var(--shell-border) !important;
+}
+
+.sidebar,
+.menu-secundario {
+  background-color: var(--shell-surface) !important;
+  border-color: var(--shell-border) !important;
+}
+
+.contenido {
+  background-image:
+    linear-gradient(var(--content-overlay-start), var(--content-overlay-end)),
+    url('../public/wall_resp.png') !important;
+}
+
+.sidebar-version {
+  color: var(--sidebar-footnote) !important;
+}
+
+.mensaje-presiona-los-dados {
+  background-color: var(--shell-bg) !important;
+  border-color: var(--shell-bg) !important;
+  color: var(--page-text) !important;
+}
+
+:root[data-theme='light'] .my-menu-button img,
+:root[data-theme='light'] .my-menu-button:hover img,
+:root[data-theme='light'] .menu-link.active img {
+  filter: none !important;
+}
+
+:root[data-theme='light'] .menu-link,
+:root[data-theme='light'] .menu-link p {
+  color: #2f3137 !important;
+}
+
+:root[data-theme='light'] .my-menu-button {
+  background-color: rgba(248, 248, 249, 0.34) !important;
+}
+
+:root[data-theme='light'] .my-menu-button:hover,
+:root[data-theme='light'] .menu-link.active .my-menu-button {
+  background-color: rgba(222, 225, 230, 0.96) !important;
+}
+
+:root[data-theme='light'] .my-menu-button:hover p,
+:root[data-theme='light'] .menu-link.active p {
+  color: #23262b !important;
+}
+
+:root[data-theme='light'] .buap-logo-container img {
+  filter: invert(1);
+}
+
+:root[data-theme='light'] .profile-menu-trigger-active {
+  box-shadow: 0 0 0 2px rgba(134, 141, 151, 0.38);
+}
+
+:root[data-theme='light'] .menu-link.active .my-menu-button {
+  border-bottom-color: var(--shell-strong-border) !important;
+  border-top-color: var(--shell-strong-border) !important;
+}
+
+:root[data-theme='light'] .framework-badge-img {
+  filter: brightness(0) saturate(100%) opacity(0.9);
+}
+
+:root[data-theme='light'] .boton-menu-secundario:hover {
+  border: 1px rgba(137, 144, 154, 0.42) double !important;
+  background-color: rgba(226, 228, 232, 0.92) !important;
+}
+
+@media (max-width: 701px) {
+  :root[data-theme='light'] .dado {
+    background: none !important;
+    color: #0f172a !important;
+    -webkit-text-fill-color: currentColor !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    animation: none !important;
+  }
+
+  :root[data-theme='light'] .white-arrow-instruction {
+    filter: brightness(0) saturate(100%);
+    opacity: 0.85;
+  }
+}

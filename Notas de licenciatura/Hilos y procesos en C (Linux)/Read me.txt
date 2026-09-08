@@ -1,0 +1,2 @@
+Todos estos archivos.c funcionan sólo en linux
+o en rextexter: https://rextester.com/l/c_online_compiler_gcc

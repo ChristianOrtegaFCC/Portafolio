@@ -1,0 +1,22 @@
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\bin\Debug\06_Exportar(11 Oct).exe.config
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\bin\Debug\06_Exportar(11 Oct).exe
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\bin\Debug\06_Exportar(11 Oct).pdb
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\06_Exportar(11 Oct).csproj.AssemblyReference.cache
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\06_Exportar(11 Oct).csproj.SuggestedBindingRedirects.cache
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\_06_Exportar_11_Oct_.Form1.resources
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\_06_Exportar_11_Oct_.Properties.Resources.resources
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\06_Exportar(11 Oct).csproj.GenerateResource.cache
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\06_Exportar(11 Oct).csproj.CoreCompileInputs.cache
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\06_Exportar(11 Oct).exe
+C:\Users\diosd\Desktop\Programas de C#\06_Exportar(11 Oct)\obj\Debug\06_Exportar(11 Oct).pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\bin\Debug\06_Exportar(11 Oct).exe.config
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\bin\Debug\06_Exportar(11 Oct).exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\bin\Debug\06_Exportar(11 Oct).pdb
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\06_Exportar(11 Oct).csproj.AssemblyReference.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\06_Exportar(11 Oct).csproj.SuggestedBindingRedirects.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\_06_Exportar_11_Oct_.Form1.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\_06_Exportar_11_Oct_.Properties.Resources.resources
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\06_Exportar(11 Oct).csproj.GenerateResource.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\06_Exportar(11 Oct).csproj.CoreCompileInputs.cache
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\06_Exportar(11 Oct).exe
+C:\Users\rocke\OneDrive\Escritorio\SO2\Programas de C#\06_Exportar(11 oct) #25\obj\Debug\06_Exportar(11 Oct).pdb

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Tabla>
+	<Persona>
+		<ID>10</ID>
+		<Nombre>diez</Nombre>
+	</Persona>
+	<Persona>
+		<ID>20</ID>
+		<Nombre>veinte</Nombre>
+	</Persona>
+	<Persona>
+		<ID>30</ID>
+		<Nombre>treinta</Nombre>
+	</Persona>
+	<Persona>
+		<ID>40</ID>
+		<Nombre>cuarenta</Nombre>
+	</Persona>
+</Tabla>
+
